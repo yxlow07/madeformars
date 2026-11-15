@@ -94,7 +94,7 @@ async function start() {
   globe.lookAt(START_VIEW.lat + 8, START_VIEW.lon - 25, SPLASH.dist);
   globe.setFraming(SPLASH);
   document.body.classList.add("ready");
-  status.textContent = "Click to start";
+  status.textContent = window.matchMedia("(pointer: coarse)").matches ? "Tap to start" : "Click to start"; // touch-first devices tap
   new THREE.TextureLoader().loadAsync("/global/viking_8k.jpg").then((t) => globe.setColor(t)).catch(() => {});
 
   // --- search index ---
@@ -357,9 +357,11 @@ async function start() {
     else if (initialHash === "FRAME" || initialHash === "SIM") enterFrame(true);
     else enterPlanet(true);
   } else {
-    // only a left mouse click leaves the splash (no keys, no right-click, no touch)
+    // a left mouse click, a tap or a pen leaves the splash; keys and right-clicks do not
+    // (a click made with the keyboard reports detail 0; right-click never fires "click")
     const go = (e: MouseEvent) => {
-      if (e.button !== 0 || ((e as PointerEvent).pointerType && (e as PointerEvent).pointerType !== "mouse")) return;
+      const type = (e as PointerEvent).pointerType;
+      if (e.button !== 0 || e.detail === 0 || (type && !["mouse", "touch", "pen"].includes(type))) return;
       window.removeEventListener("click", go);
       enterPlanet();
     };
