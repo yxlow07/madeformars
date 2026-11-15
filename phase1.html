@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MadeForMars · Phase 1</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%23c1440e'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <aside id="panel">
+      <h1>MadeForMars · Jezero</h1>
+      <section>
+        <h2>Layer</h2>
+        <div id="layers" class="seg">
+          <label><input type="radio" name="layer" value="0" checked /> Optical</label>
+          <label><input type="radio" name="layer" value="1" /> Slope</label>
+          <label><input type="radio" name="layer" value="2" /> Hazard</label>
+        </div>
+        <label class="row">Opacity <input id="opacity" type="range" min="0" max="1" step="0.05" value="0.6" /></label>
+        <label class="row"><input id="traverse" type="checkbox" checked /> Rover traverse</label>
+        <div id="legend"></div>
+      </section>
+      <section>
+        <h2>Camera</h2>
+        <div class="seg">
+          <button id="mode-orbit" class="on">Orbit</button>
+          <button id="mode-walk">Walk</button>
+          <button id="fly-stop">Fly to stop</button>
+        </div>
+        <p class="hint" id="cam-hint">Drag to orbit · right-drag to pan · wheel to zoom</p>
+      </section>
+      <section id="planner-section"></section>
+      <section id="splat-section" hidden>
+        <h2>Rover-stop splat</h2>
+        <p class="hint" id="splat-status">Loading splat…</p>
+        <div class="seg" id="splat-mode">
+          <label><input type="radio" name="splat-mode" value="auto" checked /> Auto</label>
+          <label><input type="radio" name="splat-mode" value="always" /> Always (≤60 m)</label>
+          <label><input type="radio" name="splat-mode" value="off" /> Off</label>
+        </div>
+        <p class="hint">Auto: shown near the rover at ground level — it was captured from one mast position and only looks right from there. Try Walk.</p>
+        <label class="row"><input id="splat-sink" type="checkbox" checked /> Lower terrain 0.3 m under splat</label>
+        <div class="seg" style="margin-top:6px">
+          <button id="splat-gizmo">Adjust (gizmo)</button>
+          <button id="splat-save" disabled>Save transform</button>
+        </div>
+        <p class="hint">Gizmo: T move · R rotate.</p>
+      </section>
+      <section id="stop-info"></section>
+    </aside>
+    <div id="debug" hidden></div>
+    <canvas id="profile" hidden></canvas>
+    <footer>
+      HiRISE: NASA/JPL-Caltech/University of Arizona · DTM &amp; ortho mosaics: USGS Astrogeology ·
+      Perseverance images &amp; traverse: NASA/JPL-Caltech · <kbd>`</kbd> debug
+    </footer>
+    <div id="loading">Loading terrain…</div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MadeForMars</title>
+    <link rel="icon" type="image/png" href="./src/app/assets/logo.png" />
+  </head>
+  <body class="splash">
+    <canvas id="scene"></canvas>
+
+    <!-- Screen 1: splash -->
+    <div id="splash">
+      <div class="wordmark big" aria-label="MadeForMars"></div>
+      <div id="splash-status"><span class="spinner"></span><span id="splash-text">Loading Mars…</span></div>
+    </div>
+
+    <!-- Shared shell (Screens 2–5) -->
+    <div id="shell" aria-hidden="true">
+      <header id="topbar">
+        <label id="search" class="box">
+          <span class="chev">&gt;</span>
+          <input id="search-input" type="text" placeholder="Search" autocomplete="off" spellcheck="false" />
+          <ul id="search-results" hidden></ul>
+        </label>
+        <div id="logo"><span class="logo-icon"></span><span class="wordmark small" aria-label="MadeForMars"></span></div>
+      </header>
+
+      <button id="toggle-left" class="rail-toggle left" title="Collapse the left panel" aria-label="Collapse the left panel">◀</button>
+      <button id="toggle-right" class="rail-toggle right" title="Collapse the right panel" aria-label="Collapse the right panel">▶</button>
+      <aside id="left">
+        <button id="card-map" class="card map" disabled>
+          <span class="card-title">MAP</span>
+          <span class="card-sub">Detailed Map<br />–<br />Routing</span>
+        </button>
+        <button id="card-sim" class="card sim" disabled>
+          <span class="card-title">SIM</span>
+          <span class="card-sub">Statistics<br />–<br />Planning</span>
+        </button>
+        <div id="mode" class="box"><span>Mode</span><span id="mode-value">Planet</span></div>
+      </aside>
+
+      <main id="centre">
+        <div id="selection" hidden></div>
+        <div id="sitecard" hidden></div>
+        <div id="drawer" hidden></div>
+        <div id="loading-layers">Loading data layers…</div>
+        <div id="coords" class="box"><span>Coordinates</span><span id="coords-value" class="num">--.-----, ---.-----</span></div>
+      </main>
+
+      <aside id="right">
+        <section id="addlayers">
+          <div class="addlayers-body">
+            <div class="label">Add layers</div>
+            <div class="toggles">
+              <label><input type="checkbox" id="lyr-landmarks" /> Landmarks</label>
+              <label><input type="checkbox" id="lyr-missions" /> Missions</label>
+              <label><input type="checkbox" id="lyr-bases" /> Bases</label>
+            </div>
+          </div>
+          <button id="layers-menu" class="layers-menu">Layers menu</button>
+        </section>
+
+        <section id="stats" class="dashed">
+          <div class="label">Stats</div>
+          <div class="stat"><span class="k">Optical</span><span class="v num" id="st-optical" data-src="Viking MDIM2.1 colour mosaic / MGS TES albedo (baked in M2)">[--]</span></div>
+          <div class="stat"><span class="k">Radiation</span><span class="v num" id="st-radiation" data-src="Model: Curiosity RAD 0.67 mSv/day at Gale, scaled by MOLA elevation (M2)">[--]</span></div>
+          <div class="stat"><span class="k">Minerals</span><span class="v num" id="st-minerals" data-src="MGS TES mineral maps (M2)">[--]</span></div>
+          <div class="stat"><span class="k">Temperature</span><span class="v num" id="st-temperature" data-src="MGS TES thermal inertia (M2)">[--]</span></div>
+        </section>
+
+        <section id="danger">
+          <div class="label small">Danger level</div>
+          <div class="danger-bar"><span id="danger-marker" hidden></span></div>
+          <div class="danger-ends"><span>Safe</span><span>Risky</span></div>
+          <div id="danger-note" class="danger-note num" hidden></div>
+        </section>
+
+        <section id="event" class="dashed">
+          <div class="label small">Event alert</div>
+          <p id="event-text">Solar storm and dust storm warnings appear here as simulated challenges</p>
+        </section>
+      </aside>
+    </div>
+
+    <div id="fade"></div>
+    <div id="toast" hidden></div>
+    <div id="credits" hidden></div>
+    <div id="tooltip" hidden></div>
+    <script type="module" src="/src/app/main.ts"></script>
+  </body>
+</html>
