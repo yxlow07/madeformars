@@ -47,5 +47,6 @@ To produce the data from scratch, use the pipelines in `../marswalk-hybrid/` (se
 ## Notes
 
 - `npm run build` copies `data/global` and `data/sites` into `dist/` (the dev server serves them directly), so a static host such as Vercel gets the whole app. If the build log warns about Git LFS pointers, enable Git LFS on the host (Vercel: Settings → Git → Git Large File Storage) and redeploy.
+- On small screens (narrower than 900 px or shorter than 500 px, i.e. phones) the app shows a "Best on a larger screen" notice instead of starting, so nothing heavy downloads. **Try anyway** starts it (remembered for the browser session); rotating or resizing to a large enough screen starts it automatically. The code is at the end of `src/app/main.ts`.
 - Saving walk logs needs the dev server (`/api/runs`). A static build (`dist/`) runs without it and keeps runs in memory only.
 - Data licences and credits are listed in the app (globe → Layers menu → Credits and data sources) and in `../PROJECT_REPORT.md`. The weather layers come from the Mars Climate Database (LMD / ESA / CNES): free scientific use with the source quoted, no commercial use without permission.

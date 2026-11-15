@@ -620,4 +620,41 @@ function flyDistance(diamKm?: number) {
   return Math.min(5, Math.max(1.12, 1 + (d / 3396) * 2.2));
 }
 
-start();
+// ---------------------------------------------------------------- small screens
+// The planner needs a desktop-size screen (two side rails, a 3D view, map tools). On a phone it shows a notice
+// instead of starting, so nothing heavy is downloaded; "Try anyway" (remembered for the session) starts it.
+const SMALL = window.matchMedia("(max-width: 899px), (max-height: 499px)");
+const TRY_KEY = "mfm-try-small-screen";
+let launched = false;
+function launch() {
+  if (launched) return;
+  launched = true;
+  document.getElementById("small-screen")?.remove();
+  start();
+}
+function showSmallScreen() {
+  const el = document.createElement("div");
+  el.id = "small-screen";
+  el.setAttribute("role", "dialog");
+  el.setAttribute("aria-labelledby", "ss-title");
+  el.innerHTML = `
+    <div class="ss-box">
+      <div class="ss-brand"><span class="logo-icon" aria-hidden="true"></span><span class="ss-wordmark" aria-label="MadeForMars">${wordmarkSVG()}</span></div>
+      <h1 id="ss-title">Best on a larger screen</h1>
+      <p>MadeForMars plans walks on a 3D globe and detailed terrain maps, with panels on both sides. That does not fit a phone screen.</p>
+      <p>Open it on a laptop or desktop, or a tablet in landscape.</p>
+      <button type="button" id="ss-try" class="ss-try">Try anyway</button>
+      <p class="ss-note">Downloads tens of megabytes of map data and may run slowly.</p>
+    </div>`;
+  document.body.appendChild(el);
+  el.querySelector("#ss-try")!.addEventListener("click", () => {
+    try { sessionStorage.setItem(TRY_KEY, "1"); } catch { /* private mode: just this time */ }
+    launch();
+  });
+  // rotated or resized to a big-enough screen: start normally
+  SMALL.addEventListener("change", (e) => { if (!e.matches) launch(); });
+}
+let tried = false;
+try { tried = sessionStorage.getItem(TRY_KEY) === "1"; } catch { /* storage blocked */ }
+if (SMALL.matches && !tried) showSmallScreen();
+else launch();

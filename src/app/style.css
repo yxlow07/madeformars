@@ -845,3 +845,20 @@ button.fl-stop-name:hover { color: var(--text); text-decoration: underline; text
 .nc-text:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 #note-tip { position: absolute; z-index: 7; max-width: min(240px, 40%); padding: 4px 8px; pointer-events: none; white-space: normal; overflow-wrap: anywhere;
   background: var(--panel); border: 1px solid var(--line-strong); border-radius: var(--r-ctl); color: var(--text); font: 500 calc(12 * var(--px)) / 1.35 var(--font-ui); }
+
+/* ---------- small screens: notice instead of the app ---------- */
+#small-screen { position: fixed; inset: 0; z-index: 100; display: flex; align-items: center; justify-content: center; padding: 24px 16px;
+  background: var(--bg); color: var(--text); overflow-y: auto; }
+#small-screen .ss-box { width: 100%; max-width: 420px; display: flex; flex-direction: column; gap: 12px; }
+#small-screen .ss-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+#small-screen .logo-icon { width: 40px; height: 40px; flex: none; }
+#small-screen .ss-wordmark { display: block; width: min(240px, 60vw); line-height: 0; }
+#small-screen .ss-wordmark svg { width: 100%; height: auto; }
+#small-screen h1 { margin: 0; font: 500 20px / 1.3 var(--font-ui); color: var(--text); }
+#small-screen p { margin: 0; font: 400 14px / 1.55 var(--font-ui); color: var(--text-2); }
+#small-screen .ss-try { align-self: flex-start; margin-top: 8px; height: 44px; padding: 0 20px; border: 1px solid var(--line-strong); border-radius: var(--r-ctl);
+  background: var(--bg-2); color: var(--text); font: 500 14px var(--font-ui); cursor: pointer; transition: background-color 0.15s var(--ease), border-color 0.15s var(--ease); }
+#small-screen .ss-try:hover { background: var(--raised); border-color: rgba(236, 230, 220, 0.32); }
+#small-screen .ss-try:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+#small-screen .ss-note { font-size: 12px; color: var(--muted); }
+body:has(#small-screen) #splash, body:has(#small-screen) #shell { display: none; }
