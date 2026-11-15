@@ -862,3 +862,66 @@ button.fl-stop-name:hover { color: var(--text); text-decoration: underline; text
 #small-screen .ss-try:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 #small-screen .ss-note { font-size: 12px; color: var(--muted); }
 body:has(#small-screen) #splash, body:has(#small-screen) #shell { display: none; }
+
+/* =====================================================================================================
+   phones (body.mobile, set at start for viewports < 900 px wide or < 500 px tall)
+   the side panels slide in over the view from the edge tabs; floating cards fit the phone width
+   ===================================================================================================== */
+body.mobile { --px: max(calc(100vh / 720), 0.95px); --top: 52px; --dock-w: min(260px, 72vw); }
+body.mobile #shell { grid-template-columns: 0 1fr 0 !important; }
+body.mobile #left, body.mobile #right { position: fixed; top: var(--top); bottom: 0; z-index: 30; width: min(300px, 86vw); overflow-y: auto;
+  padding: 16px; box-shadow: 0 0 32px rgba(0, 0, 0, 0.55); transition: transform 0.25s var(--ease); }
+body.mobile #left { left: 0; align-items: center; }
+body.mobile #right { right: 0; }
+body.mobile.left-collapsed #left { transform: translateX(-102%); }
+body.mobile.right-collapsed #right { transform: translateX(102%); }
+body.mobile .card { width: 100%; max-width: 240px; height: calc(200 * var(--px)); }
+body.mobile .card.sim { margin-top: 16px; }
+body.mobile #mode { width: 100%; max-width: 240px; }
+body.mobile .rail-toggle { width: 28px; height: 64px; z-index: 31; font-size: 12px; }
+body.mobile .rail-toggle.left { left: 0; border-left: 1px solid var(--line-strong); }
+body.mobile .rail-toggle.right { right: 0; border-right: 1px solid var(--line-strong); }
+body.mobile:not(.left-collapsed) .rail-toggle.left { left: min(300px, 86vw); }
+body.mobile:not(.right-collapsed) .rail-toggle.right { right: min(300px, 86vw); }
+/* top bar: icon + search only */
+body.mobile #topbar { padding: 0 12px; gap: 12px; }
+body.mobile #search { width: auto; flex: 1; max-width: none; height: 36px; }
+body.mobile #logo .wordmark.small { display: none; }
+/* floating cards and legends sized for the phone */
+body.mobile .legend-panel { width: min(260px, 72vw); }
+body.mobile #sitecard { width: min(330px, 92vw); max-height: 55%; }
+body.mobile .pin-card, body.mobile .note-card { width: min(300px, 92vw); }
+body.mobile #sim-arrive { left: 8px; right: 8px; width: auto; max-width: 420px; top: 120px; max-height: calc(100% - 260px); }
+/* map toolbar: one row that scrolls sideways instead of running off the screen */
+body.mobile .frame-toolbar { left: 8px; right: 8px; top: 8px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+body.mobile .frame-toolbar::-webkit-scrollbar { display: none; }
+body.mobile .ft-group { flex: none; }
+body.mobile .frame-profile-wrap { left: 8px; right: 8px; height: 96px; }
+/* walk HUD: drop keyboard hints and the event log; smaller minimap */
+body.mobile #sim-keys, body.mobile #sim-log { display: none; }
+body.mobile #sim-mm-wrap { width: min(150px, 34vw); right: 12px; top: 12px; }
+body.mobile #sim-mm-key { display: none; }
+body.mobile #sim-top { left: 12px; top: 12px; max-width: calc(100% - min(150px, 34vw) - 40px); }
+body.mobile #sim-hud .hb { display: none; }
+body.mobile #sim-bar, body.mobile #db-bottom { left: 6px; right: 6px; bottom: 6px; }
+@media (max-width: 599px) { body.mobile #sim-compass { display: none; } }
+/* the rails are out of the grid flow on phones: keep the centre in the middle column (else it lands in the 0-px first one) */
+body.mobile #centre { grid-column: 2; grid-row: 2; }
+body.mobile #sim-next { left: 12px; right: auto; top: 128px; bottom: auto; transform: none; max-width: calc(100% - min(150px, 34vw) - 40px); white-space: normal; }
+@media (max-height: 499px) {   /* phone in landscape: keep the bottom panel and the walk HUD short */
+  body.mobile .frame-profile-wrap { height: 64px; }
+  body.mobile #sim-next { top: 96px; }
+  body.mobile #sim-mm-wrap { width: min(110px, 22vw); }
+}
+/* phones: pin and note cards are a bottom sheet (the follow-the-pin placement does not fit a short screen) */
+body.mobile .pin-card, body.mobile .note-card { left: 8px !important; right: 8px; top: auto !important; bottom: 8px; width: auto; max-width: 520px;
+  max-height: 62%; z-index: 9; }
+body.mobile .pc-thumb { height: 96px; }
+body.mobile .sa-img { height: 110px; }
+@media (max-height: 499px) {
+  body.mobile .pin-card, body.mobile .note-card { max-height: calc(100% - 16px); top: 8px !important; bottom: auto; left: auto !important; right: 8px; width: min(340px, 48vw); }
+  body.mobile .pc-thumb { height: 64px; }
+  body.mobile .sa-img { height: 72px; }
+  body.mobile #sim-arrive { top: 8px; bottom: 76px; max-height: none; width: min(340px, 48vw); left: auto; right: 8px; }
+}
+@media (max-height: 499px) { body.mobile #sim-compass { display: none; } }

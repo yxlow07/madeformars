@@ -73,6 +73,7 @@ export class LegendPanel {
       this.el.classList.toggle("collapsed");
       btn.textContent = this.el.classList.contains("collapsed") ? "+" : "–";
     });
+    if (document.body.classList.contains("mobile")) { this.el.classList.add("collapsed"); btn.textContent = "+"; } // phones: start small
   }
   set(html: string) {
     if (this.body.innerHTML !== html) this.body.innerHTML = html;

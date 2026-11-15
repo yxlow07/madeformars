@@ -39,11 +39,24 @@ async function loadJSON<T>(url: string): Promise<T> {
 
 /** Planet framing with Mars centred between the side panels (they can be collapsed). */
 function planetFraming() {
+  if (document.body.classList.contains("mobile")) return { ...PLANET, offX: 0 }; // phone: the panels are drawers over the view
   const s = window.innerHeight / 720, lw = document.getElementById("left")!.offsetWidth, rw = document.getElementById("right")!.offsetWidth;
   return { ...PLANET, offX: -(lw - rw) / 2 / s };
 }
 
+/** Phones: side panels become slide-over drawers (closed at start), legends start collapsed, text has a minimum size. */
+function applyMobileLayout() {
+  const small = window.matchMedia("(max-width: 899px), (max-height: 499px)").matches;
+  document.body.classList.toggle("mobile", small);
+  if (!small) return;
+  document.body.classList.add("left-collapsed", "right-collapsed");
+  const l = document.getElementById("toggle-left"), r = document.getElementById("toggle-right");
+  if (l) { l.textContent = "▶"; l.title = "Open the left panel"; l.setAttribute("aria-label", "Open the left panel"); }
+  if (r) { r.textContent = "◀"; r.title = "Open the right panel"; r.setAttribute("aria-label", "Open the right panel"); }
+}
+
 async function start() {
+  applyMobileLayout();
   document.querySelectorAll(".wordmark").forEach((el) => (el.innerHTML = wordmarkSVG()));
   // MAP / SIM card titles in the wordmark's lettering (stroke follows the card state colour)
   document.querySelectorAll<HTMLElement>(".card-title").forEach((el) => {
@@ -445,6 +458,10 @@ async function start() {
   for (const side of ["left", "right"] as const) {
     $(`toggle-${side}`).addEventListener("click", () => {
       const on = document.body.classList.toggle(`${side}-collapsed`);
+      if (!on && document.body.classList.contains("mobile")) {   // phone: one drawer at a time
+        const other = side === "left" ? "right" : "left";
+        if (!document.body.classList.contains(`${other}-collapsed`)) $(`toggle-${other}`).click();
+      }
       const btn = $(`toggle-${side}`);
       btn.textContent = (side === "left") === on ? "▶" : "◀";
       const label = `${on ? "Open" : "Collapse"} the ${side} panel`;
@@ -456,6 +473,9 @@ async function start() {
   // --- reflect state in the shell ---
   store.on((s, prev) => {
     if (s.mode !== prev.mode) m2?.showLegend(s.mode === "PLANET");
+    // phone: a new screen starts with the drawers closed, so the view is not covered
+    if (s.mode !== prev.mode && document.body.classList.contains("mobile"))
+      for (const side of ["left", "right"] as const) if (!document.body.classList.contains(`${side}-collapsed`)) $(`toggle-${side}`).click();
     if (s.mode !== prev.mode) {
       $("mode-value").textContent = ({ SPLASH: "Planet", PLANET: "Planet", FRAME: "Map", SIM: "Walk", DEBRIEF: "Debrief" } as Record<string, string>)[s.mode] ?? s.mode;
     }
@@ -642,10 +662,10 @@ function showSmallScreen() {
   el.innerHTML = `
     <div class="ss-box">
       <div class="ss-brand"><span class="logo-icon" aria-hidden="true"></span><span class="ss-wordmark" aria-label="MadeForMars">${wordmarkSVG()}</span></div>
-      <h1 id="ss-title">Best on a larger screen</h1>
-      <p>MadeForMars plans walks on a 3D globe and detailed terrain maps, with panels on both sides. That does not fit a phone screen.</p>
-      <p>Open it on a laptop or desktop, or a tablet in landscape.</p>
-      <button type="button" id="ss-try" class="ss-try">Try anyway</button>
+      <h1 id="ss-title">Works best on a larger screen</h1>
+      <p>MadeForMars plans walks on a 3D globe and detailed terrain maps. On a phone the side panels open as drawers from the edge tabs.</p>
+      <p>For the full view, use a laptop, desktop or tablet in landscape.</p>
+      <button type="button" id="ss-try" class="ss-try">Continue</button>
       <p class="ss-note">Downloads tens of megabytes of map data and may run slowly.</p>
     </div>`;
   document.body.appendChild(el);
