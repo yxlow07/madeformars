@@ -7,7 +7,7 @@ Everything needed to run the MadeForMars web app: the front-end source, its buil
 ```powershell
 npm install                     # Node 20+ (tested on 24)
 npm run dev                     # http://localhost:5173  (left click on the splash to start)
-npm run build                   # type-check + production build into dist/
+npm run build                   # type-check + production build into dist/ (includes data/processed, data/global and data/sites)
 ```
 
 The data is already in `data/`. To use a different data folder instead (e.g. after re-baking in the main project), point the dev server at it:
@@ -46,5 +46,6 @@ To produce the data from scratch, use the pipelines in `../marswalk-hybrid/` (se
 
 ## Notes
 
+- `npm run build` copies `data/global` and `data/sites` into `dist/` (the dev server serves them directly), so a static host such as Vercel gets the whole app. If the build log warns about Git LFS pointers, enable Git LFS on the host (Vercel: Settings → Git → Git Large File Storage) and redeploy.
 - Saving walk logs needs the dev server (`/api/runs`). A static build (`dist/`) runs without it and keeps runs in memory only.
 - Data licences and credits are listed in the app (globe → Layers menu → Credits and data sources) and in `../PROJECT_REPORT.md`. The weather layers come from the Mars Climate Database (LMD / ESA / CNES): free scientific use with the source quoted, no commercial use without permission.

@@ -1,6 +1,6 @@
 import { defineConfig, type Plugin } from "vite";
 import { fileURLToPath } from "node:url";
-import { createReadStream, existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import { cpSync, createReadStream, existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { extname, join, normalize, resolve } from "node:path";
 
 // Data lives in ./data (or wherever MFM_DATA_DIR points, e.g. MFM_DATA_DIR=../marswalk-hybrid/data):
@@ -18,9 +18,33 @@ const TYPES: Record<string, string> = {
   ".i16": "application/octet-stream", ".u8": "application/octet-stream", ".f32": "application/octet-stream",
 };
 
+/** Files that are still Git LFS pointers (the host did not fetch LFS content) instead of real data. */
+function lfsPointers(dir: string, out: string[] = []): string[] {
+  for (const e of readdirSync(dir, { withFileTypes: true })) {
+    const p = join(dir, e.name);
+    if (e.isDirectory()) lfsPointers(p, out);
+    else if (statSync(p).size < 200 && readFileSync(p, "utf8").startsWith("version https://git-lfs.github.com/spec/")) out.push(p);
+  }
+  return out;
+}
+
 function serveGlobal(): Plugin {
+  let outDir = "";
   return {
     name: "marswalk-global-data",
+    configResolved(config) { outDir = resolve(config.root, config.build.outDir); },
+    // `vite build` only copies the public dir (data/processed): also ship the globe and the other sites,
+    // so /global/... and /sites/... exist on a static host exactly as the dev server serves them.
+    closeBundle() {
+      if (!outDir || !existsSync(outDir)) return;
+      for (const [name, DIR] of [["global", GLOBAL_DIR], ["sites", SITES_DIR]] as const) {
+        if (!existsSync(DIR)) { this.warn(`data/${name} not found: /${name}/ will be missing from the build`); continue; }
+        cpSync(DIR, join(outDir, name), { recursive: true, filter: (src) => !src.endsWith(".gitkeep") });
+      }
+      const ptr = lfsPointers(outDir);
+      if (ptr.length) this.warn(`${ptr.length} data files are Git LFS pointers, not real data (e.g. ${ptr[0].slice(outDir.length + 1)}). ` +
+        "Enable Git LFS on the host (Vercel: Settings -> Git -> Git Large File Storage) and redeploy.");
+    },
     configureServer(server) {
       for (const [prefix, DIR] of [["/global", GLOBAL_DIR], ["/sites", SITES_DIR]] as const) server.middlewares.use(prefix, (req, res, next) => {
         const rel = normalize(decodeURIComponent((req.url || "/").split("?")[0])).replace(/^([/\\])+/, "");
