@@ -1,6 +1,6 @@
 # MadeForMars — deploy folder
 
-The minimum needed to run the MadeForMars web app: the front-end source, its build configuration and the app's own static assets (Draco decoder and 3D models). **No mission data is included.** The full project, with the Python pipelines that produce the data, is in `../marswalk-hybrid/`.
+Everything needed to run the MadeForMars web app: the front-end source, its build configuration, the app's static assets (Draco decoder and 3D models) and the baked data for all five sites and the globe (about 310 MB, 273 files, none over 21 MB). Training files (splat images and point clouds) are not included. The full project, with the Python pipelines that produce the data, is in `../marswalk-hybrid/`.
 
 ## Run
 
@@ -10,7 +10,7 @@ npm run dev                     # http://localhost:5173  (left click on the spla
 npm run build                   # type-check + production build into dist/
 ```
 
-The app shows nothing useful until the data folders below are filled. Either copy the baked data in, or point the dev server at an existing data folder without copying:
+The data is already in `data/`. To use a different data folder instead (e.g. after re-baking in the main project), point the dev server at it:
 
 ```powershell
 $env:MFM_DATA_DIR="../marswalk-hybrid/data"; npm run dev
@@ -26,11 +26,12 @@ $env:MFM_DATA_DIR="../marswalk-hybrid/data"; npm run dev
 | `vite.config.ts` | dev server: serves `data/processed` at `/`, `data/global` at `/global/`, `data/sites` at `/sites/`, and the walk-log API `/api/runs` (saves to `runs/`) |
 | `data/processed/draco/` | Draco mesh decoder (needed to load the 3D models) |
 | `data/processed/models/` | `hdu1.glb` (habitat), `sev.glb` (pressurised rover), `astronaut_marswalk.glb` (rigged walking astronaut) |
-| `data/global/`, `data/sites/`, `runs/` | empty: data goes here (see below) |
+| `data/processed/` (rest), `data/sites/`, `data/global/` | the baked data (see below) |
+| `runs/` | walk logs saved by the dev server (git-ignored) |
 
-## Data to add (copy from `../marswalk-hybrid/data/` after baking)
+## Data included (copied from `../marswalk-hybrid/data/`)
 
-Copy only these files. The `splat/` subfolders (training images, point clouds) are **not** needed. In total this is about 310 MB, with no single file over 21 MB.
+To refresh it after re-baking, copy these same files again. The `splat/` subfolders (training images, point clouds) are **not** needed.
 
 **`data/processed/`** (Jezero, the default site), next to `draco/` and `models/`:
 `terrain.json`, `height.f32`, `slope.f32`, `cost.f32`, `ortho.jpg`, `slope.png`, `hazard.png`, `layers.json`, `pois.json`, `pois/` (stop photos), `traverse.json`, `stop.json`, `stop.spz`, `splat_transform.json`

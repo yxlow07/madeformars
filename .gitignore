@@ -1,8 +1,3 @@
 node_modules/
 dist/
 runs/*.json
-# baked data (large); keep the app assets in data/processed/draco and models
-data/global/*
-!data/global/.gitkeep
-data/sites/*
-!data/sites/.gitkeep

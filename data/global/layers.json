@@ -1,0 +1,1504 @@
+[
+  {
+    "id": "elevation",
+    "name": "Elevation (MOLA)",
+    "units": "m",
+    "file": "mola_4k.i16",
+    "width": 4096,
+    "height": 2048,
+    "dtype": "int16",
+    "kind": "continuous",
+    "min": -8167,
+    "max": 21163,
+    "source": "https://planetarymaps.usgs.gov/mosaic/Mars_MGS_MOLA_DEM_mosaic_global_463m.tif",
+    "citation": "Smith et al. 2001, JGR 106; MGS MOLA, NASA GSFC / USGS Astrogeology (463 m)",
+    "png": "layers/elevation.png",
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0,
+          [
+            40,
+            30,
+            120
+          ]
+        ],
+        [
+          0.2,
+          [
+            40,
+            110,
+            200
+          ]
+        ],
+        [
+          0.38,
+          [
+            60,
+            180,
+            120
+          ]
+        ],
+        [
+          0.5,
+          [
+            220,
+            210,
+            90
+          ]
+        ],
+        [
+          0.65,
+          [
+            210,
+            120,
+            50
+          ]
+        ],
+        [
+          0.82,
+          [
+            150,
+            70,
+            50
+          ]
+        ],
+        [
+          1,
+          [
+            250,
+            250,
+            250
+          ]
+        ]
+      ],
+      "min": -8000,
+      "max": 12000,
+      "units": "m",
+      "note": "Volcano summits above +12 km saturate to white."
+    }
+  },
+  {
+    "id": "slope",
+    "name": "Slope (from MOLA, km-scale)",
+    "units": "deg",
+    "file": "slope_4k.u8",
+    "width": 4096,
+    "height": 2048,
+    "dtype": "uint8",
+    "kind": "continuous",
+    "source": "https://planetarymaps.usgs.gov/mosaic/Mars_MGS_MOLA_DEM_mosaic_global_463m.tif",
+    "citation": "derived from MOLA 463 m decimated to 4096x2048 (~5 km cells)"
+  },
+  {
+    "id": "ti",
+    "name": "Thermal inertia (TES night 2007)",
+    "units": "J m\u207b\u00b2 K\u207b\u00b9 s\u207b\u00bd",
+    "file": "layers/ti.u16",
+    "png": "layers/ti.png",
+    "width": 1440,
+    "height": 720,
+    "dtype": "uint16",
+    "offset": 20,
+    "scale": 0.011902218695638905,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": 20,
+    "max": 800,
+    "valid_share": 0.9691936728395062,
+    "source": "https://pds-geosciences.wustl.edu/mgs/mgs-m-tes-5-timap-v1/mgst_9001/data/global_ti_night_2007.img",
+    "citation": "Putzig & Mellon 2007, Icarus 191; PDS MGS-M-TES-5-TIMAP-V1",
+    "kind": "continuous",
+    "label_excerpt": [],
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0,
+          [
+            30,
+            30,
+            80
+          ]
+        ],
+        [
+          0.3,
+          [
+            60,
+            120,
+            200
+          ]
+        ],
+        [
+          0.55,
+          [
+            240,
+            220,
+            120
+          ]
+        ],
+        [
+          0.8,
+          [
+            240,
+            120,
+            50
+          ]
+        ],
+        [
+          1,
+          [
+            180,
+            30,
+            30
+          ]
+        ]
+      ],
+      "min": 20,
+      "max": 800,
+      "units": "J m\u207b\u00b2 K\u207b\u00b9 s\u207b\u00bd"
+    }
+  },
+  {
+    "id": "geology",
+    "name": "Geologic units (SIM 3292)",
+    "units": "unit",
+    "file": "layers/geology.u8",
+    "png": "layers/geology.png",
+    "width": 4096,
+    "height": 2048,
+    "dtype": "uint8",
+    "nodata": 0,
+    "kind": "categorical",
+    "table": "geology_units.json",
+    "unit_count": 44,
+    "source": "https://pubs.usgs.gov/sim/3292/downloads/sim3292_database.zip",
+    "citation": "Tanaka et al. 2014, Geologic Map of Mars, USGS SIM 3292 (doi:10.3133/sim3292)",
+    "legend": {
+      "type": "categories",
+      "items": [
+        {
+          "label": "Amazonian (youngest)",
+          "color": [
+            110,
+            170,
+            110
+          ]
+        },
+        {
+          "label": "Hesperian",
+          "color": [
+            120,
+            95,
+            160
+          ]
+        },
+        {
+          "label": "Noachian (oldest)",
+          "color": [
+            150,
+            95,
+            60
+          ]
+        }
+      ],
+      "note": "44 units, shaded by age; each unit varies slightly. Hover the globe for the unit name."
+    }
+  },
+  {
+    "id": "hematite",
+    "name": "Hematite abundance (TES)",
+    "units": "abundance (fraction)",
+    "file": "layers/hematite.u16",
+    "png": "layers/hematite.png",
+    "width": 1440,
+    "height": 720,
+    "dtype": "uint16",
+    "offset": 0,
+    "scale": 1.179099058617052e-06,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": 0,
+    "max": 0.07727107770740987,
+    "valid_share": 0.7226726466049382,
+    "source": "http://ms-mars.mars.asu.edu/TES_Hematite_numeric?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/vicar&WIDTH=1440&HEIGHT=720&SRS=JMARS:4&BBOX=0,-90,360,90&STYLES=&VERSION=1.1.1&LAYERS=TES_Hematite_numeric",
+    "citation": "Bandfield 2002, JGR 107 (TES deconvolution, 16 km); ASU Mars Global Data Sets",
+    "kind": "mineral",
+    "mineral": "Hematite",
+    "midrange": 0.02195785921066999,
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0,
+          [
+            20,
+            18,
+            40
+          ]
+        ],
+        [
+          0.25,
+          [
+            59,
+            82,
+            139
+          ]
+        ],
+        [
+          0.5,
+          [
+            33,
+            145,
+            140
+          ]
+        ],
+        [
+          0.75,
+          [
+            94,
+            201,
+            98
+          ]
+        ],
+        [
+          1,
+          [
+            253,
+            231,
+            37
+          ]
+        ]
+      ],
+      "min": 0,
+      "max": 0.07727107770740987,
+      "units": "abundance (fraction)",
+      "note": "Top 0.5% saturates. Dashed tick = mid-range used by the science score.",
+      "mark": 0.02195785921066999
+    }
+  },
+  {
+    "id": "olivine",
+    "name": "Olivine abundance (TES)",
+    "units": "abundance (fraction)",
+    "file": "layers/olivine.u16",
+    "png": "layers/olivine.png",
+    "width": 1440,
+    "height": 720,
+    "dtype": "uint16",
+    "offset": 0,
+    "scale": 7.11790333384979e-07,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": 0,
+    "max": 0.04664646770805121,
+    "valid_share": 0.7226726466049382,
+    "source": "http://ms-mars.mars.asu.edu/TES_Olivine_numeric?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/vicar&WIDTH=1440&HEIGHT=720&SRS=JMARS:4&BBOX=0,-90,360,90&STYLES=&VERSION=1.1.1&LAYERS=TES_Olivine_numeric",
+    "citation": "Bandfield 2002, JGR 107 (TES deconvolution, 16 km); ASU Mars Global Data Sets",
+    "kind": "mineral",
+    "mineral": "Olivine",
+    "midrange": 0.010820947028696522,
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0,
+          [
+            20,
+            18,
+            40
+          ]
+        ],
+        [
+          0.25,
+          [
+            59,
+            82,
+            139
+          ]
+        ],
+        [
+          0.5,
+          [
+            33,
+            145,
+            140
+          ]
+        ],
+        [
+          0.75,
+          [
+            94,
+            201,
+            98
+          ]
+        ],
+        [
+          1,
+          [
+            253,
+            231,
+            37
+          ]
+        ]
+      ],
+      "min": 0,
+      "max": 0.04664646770805121,
+      "units": "abundance (fraction)",
+      "note": "Top 0.5% saturates. Dashed tick = mid-range used by the science score.",
+      "mark": 0.010820947028696522
+    }
+  },
+  {
+    "id": "plagioclase",
+    "name": "Plagioclase abundance (TES)",
+    "units": "abundance (fraction)",
+    "file": "layers/plagioclase.u16",
+    "png": "layers/plagioclase.png",
+    "width": 1440,
+    "height": 720,
+    "dtype": "uint16",
+    "offset": 0,
+    "scale": 3.888359548633229e-06,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": 0,
+    "max": 0.25481975466013007,
+    "valid_share": 0.7226726466049382,
+    "source": "http://ms-mars.mars.asu.edu/TES_Plagioclase_numeric?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/vicar&WIDTH=1440&HEIGHT=720&SRS=JMARS:4&BBOX=0,-90,360,90&STYLES=&VERSION=1.1.1&LAYERS=TES_Plagioclase_numeric",
+    "citation": "Bandfield 2002, JGR 107 (TES deconvolution, 16 km); ASU Mars Global Data Sets",
+    "kind": "mineral",
+    "mineral": "Plagioclase",
+    "midrange": 0.11150880120694635,
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0,
+          [
+            20,
+            18,
+            40
+          ]
+        ],
+        [
+          0.25,
+          [
+            59,
+            82,
+            139
+          ]
+        ],
+        [
+          0.5,
+          [
+            33,
+            145,
+            140
+          ]
+        ],
+        [
+          0.75,
+          [
+            94,
+            201,
+            98
+          ]
+        ],
+        [
+          1,
+          [
+            253,
+            231,
+            37
+          ]
+        ]
+      ],
+      "min": 0,
+      "max": 0.25481975466013007,
+      "units": "abundance (fraction)",
+      "note": "Top 0.5% saturates. Dashed tick = mid-range used by the science score.",
+      "mark": 0.11150880120694635
+    }
+  },
+  {
+    "id": "kfeldspar",
+    "name": "K-feldspar abundance (TES)",
+    "units": "abundance (fraction)",
+    "file": "layers/kfeldspar.u16",
+    "png": "layers/kfeldspar.png",
+    "width": 1440,
+    "height": 720,
+    "dtype": "uint16",
+    "offset": 0,
+    "scale": 9.843671260839952e-07,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": 0,
+    "max": 0.06450951524078855,
+    "valid_share": 0.7226726466049382,
+    "source": "http://ms-mars.mars.asu.edu/TES_Feldspar_numeric?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/vicar&WIDTH=1440&HEIGHT=720&SRS=JMARS:4&BBOX=0,-90,360,90&STYLES=&VERSION=1.1.1&LAYERS=TES_Feldspar_numeric",
+    "citation": "Bandfield 2002, JGR 107 (TES deconvolution, 16 km); ASU Mars Global Data Sets",
+    "kind": "mineral",
+    "mineral": "K-feldspar",
+    "midrange": 0.033491564169526096,
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0,
+          [
+            20,
+            18,
+            40
+          ]
+        ],
+        [
+          0.25,
+          [
+            59,
+            82,
+            139
+          ]
+        ],
+        [
+          0.5,
+          [
+            33,
+            145,
+            140
+          ]
+        ],
+        [
+          0.75,
+          [
+            94,
+            201,
+            98
+          ]
+        ],
+        [
+          1,
+          [
+            253,
+            231,
+            37
+          ]
+        ]
+      ],
+      "min": 0,
+      "max": 0.06450951524078855,
+      "units": "abundance (fraction)",
+      "note": "Top 0.5% saturates. Dashed tick = mid-range used by the science score.",
+      "mark": 0.033491564169526096
+    }
+  },
+  {
+    "id": "quartz",
+    "name": "Quartz abundance (TES)",
+    "units": "abundance (fraction)",
+    "file": "layers/quartz.u16",
+    "png": "layers/quartz.png",
+    "width": 1440,
+    "height": 720,
+    "dtype": "uint16",
+    "offset": 0,
+    "scale": 2.9814204559624815e-07,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": 0,
+    "max": 0.019538440816104525,
+    "valid_share": 0.7226726466049382,
+    "source": "http://ms-mars.mars.asu.edu/TES_Quartz_numeric?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/vicar&WIDTH=1440&HEIGHT=720&SRS=JMARS:4&BBOX=0,-90,360,90&STYLES=&VERSION=1.1.1&LAYERS=TES_Quartz_numeric",
+    "citation": "Bandfield 2002, JGR 107 (TES deconvolution, 16 km); ASU Mars Global Data Sets",
+    "kind": "mineral",
+    "mineral": "Quartz",
+    "midrange": 0.004412925243377682,
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0,
+          [
+            20,
+            18,
+            40
+          ]
+        ],
+        [
+          0.25,
+          [
+            59,
+            82,
+            139
+          ]
+        ],
+        [
+          0.5,
+          [
+            33,
+            145,
+            140
+          ]
+        ],
+        [
+          0.75,
+          [
+            94,
+            201,
+            98
+          ]
+        ],
+        [
+          1,
+          [
+            253,
+            231,
+            37
+          ]
+        ]
+      ],
+      "min": 0,
+      "max": 0.019538440816104525,
+      "units": "abundance (fraction)",
+      "note": "Top 0.5% saturates. Dashed tick = mid-range used by the science score.",
+      "mark": 0.004412925243377682
+    }
+  },
+  {
+    "id": "carbonate",
+    "name": "Carbonate abundance (TES)",
+    "units": "abundance (fraction)",
+    "file": "layers/carbonate.u16",
+    "png": "layers/carbonate.png",
+    "width": 1440,
+    "height": 720,
+    "dtype": "uint16",
+    "offset": 0,
+    "scale": 1.1778267560728589e-06,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": 0,
+    "max": 0.07718769863247874,
+    "valid_share": 0.7226726466049382,
+    "source": "http://ms-mars.mars.asu.edu/TES_Carbonate_numeric?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/vicar&WIDTH=1440&HEIGHT=720&SRS=JMARS:4&BBOX=0,-90,360,90&STYLES=&VERSION=1.1.1&LAYERS=TES_Carbonate_numeric",
+    "citation": "Bandfield 2002, JGR 107 (TES deconvolution, 16 km); ASU Mars Global Data Sets",
+    "kind": "mineral",
+    "mineral": "Carbonate",
+    "midrange": 0.038736334815621366,
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0,
+          [
+            20,
+            18,
+            40
+          ]
+        ],
+        [
+          0.25,
+          [
+            59,
+            82,
+            139
+          ]
+        ],
+        [
+          0.5,
+          [
+            33,
+            145,
+            140
+          ]
+        ],
+        [
+          0.75,
+          [
+            94,
+            201,
+            98
+          ]
+        ],
+        [
+          1,
+          [
+            253,
+            231,
+            37
+          ]
+        ]
+      ],
+      "min": 0,
+      "max": 0.07718769863247874,
+      "units": "abundance (fraction)",
+      "note": "Top 0.5% saturates. Dashed tick = mid-range used by the science score.",
+      "mark": 0.038736334815621366
+    }
+  },
+  {
+    "id": "amphibole",
+    "name": "Amphibole abundance (TES)",
+    "units": "abundance (fraction)",
+    "file": "layers/amphibole.u16",
+    "png": "layers/amphibole.png",
+    "width": 1440,
+    "height": 720,
+    "dtype": "uint16",
+    "offset": 0,
+    "scale": 3.7567413065250715e-07,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": 0,
+    "max": 0.024619428478181403,
+    "valid_share": 0.7226726466049382,
+    "source": "http://ms-mars.mars.asu.edu/TES_Amphibole_numeric?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/vicar&WIDTH=1440&HEIGHT=720&SRS=JMARS:4&BBOX=0,-90,360,90&STYLES=&VERSION=1.1.1&LAYERS=TES_Amphibole_numeric",
+    "citation": "Bandfield 2002, JGR 107 (TES deconvolution, 16 km); ASU Mars Global Data Sets",
+    "kind": "mineral",
+    "mineral": "Amphibole",
+    "midrange": 0.0023811769671738107,
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0,
+          [
+            20,
+            18,
+            40
+          ]
+        ],
+        [
+          0.25,
+          [
+            59,
+            82,
+            139
+          ]
+        ],
+        [
+          0.5,
+          [
+            33,
+            145,
+            140
+          ]
+        ],
+        [
+          0.75,
+          [
+            94,
+            201,
+            98
+          ]
+        ],
+        [
+          1,
+          [
+            253,
+            231,
+            37
+          ]
+        ]
+      ],
+      "min": 0,
+      "max": 0.024619428478181403,
+      "units": "abundance (fraction)",
+      "note": "Top 0.5% saturates. Dashed tick = mid-range used by the science score.",
+      "mark": 0.0023811769671738107
+    }
+  },
+  {
+    "id": "cpx",
+    "name": "Clinopyroxene abundance (TES)",
+    "units": "abundance (fraction)",
+    "file": "layers/cpx.u16",
+    "png": "layers/cpx.png",
+    "width": 1440,
+    "height": 720,
+    "dtype": "uint16",
+    "offset": 0,
+    "scale": 2.624579329920979e-06,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": 0,
+    "max": 0.17199918180704143,
+    "valid_share": 0.7226726466049382,
+    "source": "http://ms-mars.mars.asu.edu/TES_Clinopyroxene_numeric?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/vicar&WIDTH=1440&HEIGHT=720&SRS=JMARS:4&BBOX=0,-90,360,90&STYLES=&VERSION=1.1.1&LAYERS=TES_Clinopyroxene_numeric",
+    "citation": "Bandfield 2002, JGR 107 (TES deconvolution, 16 km); ASU Mars Global Data Sets",
+    "kind": "mineral",
+    "mineral": "Clinopyroxene",
+    "midrange": 0.06401692014187574,
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0,
+          [
+            20,
+            18,
+            40
+          ]
+        ],
+        [
+          0.25,
+          [
+            59,
+            82,
+            139
+          ]
+        ],
+        [
+          0.5,
+          [
+            33,
+            145,
+            140
+          ]
+        ],
+        [
+          0.75,
+          [
+            94,
+            201,
+            98
+          ]
+        ],
+        [
+          1,
+          [
+            253,
+            231,
+            37
+          ]
+        ]
+      ],
+      "min": 0,
+      "max": 0.17199918180704143,
+      "units": "abundance (fraction)",
+      "note": "Top 0.5% saturates. Dashed tick = mid-range used by the science score.",
+      "mark": 0.06401692014187574
+    }
+  },
+  {
+    "id": "opx",
+    "name": "Orthopyroxene abundance (TES)",
+    "units": "abundance (fraction)",
+    "file": "layers/opx.u16",
+    "png": "layers/opx.png",
+    "width": 1440,
+    "height": 720,
+    "dtype": "uint16",
+    "offset": 0,
+    "scale": 1.1487818180479709e-06,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": 0,
+    "max": 0.07528426766395573,
+    "valid_share": 0.7226726466049382,
+    "source": "http://ms-mars.mars.asu.edu/TES_Orthopyroxene_numeric?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/vicar&WIDTH=1440&HEIGHT=720&SRS=JMARS:4&BBOX=0,-90,360,90&STYLES=&VERSION=1.1.1&LAYERS=TES_Orthopyroxene_numeric",
+    "citation": "Bandfield 2002, JGR 107 (TES deconvolution, 16 km); ASU Mars Global Data Sets",
+    "kind": "mineral",
+    "mineral": "Orthopyroxene",
+    "midrange": 0.018127658776938903,
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0,
+          [
+            20,
+            18,
+            40
+          ]
+        ],
+        [
+          0.25,
+          [
+            59,
+            82,
+            139
+          ]
+        ],
+        [
+          0.5,
+          [
+            33,
+            145,
+            140
+          ]
+        ],
+        [
+          0.75,
+          [
+            94,
+            201,
+            98
+          ]
+        ],
+        [
+          1,
+          [
+            253,
+            231,
+            37
+          ]
+        ]
+      ],
+      "min": 0,
+      "max": 0.07528426766395573,
+      "units": "abundance (fraction)",
+      "note": "Top 0.5% saturates. Dashed tick = mid-range used by the science score.",
+      "mark": 0.018127658776938903
+    }
+  },
+  {
+    "id": "glassclay",
+    "name": "Sheet silicates / glass abundance (TES)",
+    "units": "abundance (fraction)",
+    "file": "layers/glassclay.u16",
+    "png": "layers/glassclay.png",
+    "width": 1440,
+    "height": 720,
+    "dtype": "uint16",
+    "offset": 0,
+    "scale": 3.318611831341546e-06,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": 0,
+    "max": 0.21748190775513687,
+    "valid_share": 0.7226726466049382,
+    "source": "http://ms-mars.mars.asu.edu/TES_Glass_Clay_numeric?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/vicar&WIDTH=1440&HEIGHT=720&SRS=JMARS:4&BBOX=0,-90,360,90&STYLES=&VERSION=1.1.1&LAYERS=TES_Glass_Clay_numeric",
+    "citation": "Bandfield 2002, JGR 107 (TES deconvolution, 16 km); ASU Mars Global Data Sets",
+    "kind": "mineral",
+    "mineral": "Sheet silicates / glass",
+    "midrange": 0.09369946978986263,
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0,
+          [
+            20,
+            18,
+            40
+          ]
+        ],
+        [
+          0.25,
+          [
+            59,
+            82,
+            139
+          ]
+        ],
+        [
+          0.5,
+          [
+            33,
+            145,
+            140
+          ]
+        ],
+        [
+          0.75,
+          [
+            94,
+            201,
+            98
+          ]
+        ],
+        [
+          1,
+          [
+            253,
+            231,
+            37
+          ]
+        ]
+      ],
+      "min": 0,
+      "max": 0.21748190775513687,
+      "units": "abundance (fraction)",
+      "note": "Top 0.5% saturates. Dashed tick = mid-range used by the science score.",
+      "mark": 0.09369946978986263
+    }
+  },
+  {
+    "id": "dust",
+    "name": "Dust abundance (TES)",
+    "units": "relative abundance (higher = dustier)",
+    "file": "layers/dust.u16",
+    "png": "layers/dust.png",
+    "width": 1440,
+    "height": 720,
+    "dtype": "uint16",
+    "offset": 0,
+    "scale": 1.9023983567388292e-05,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": 0,
+    "max": 1.2467177391052244,
+    "valid_share": 0.7226726466049382,
+    "source": "http://ms-mars.mars.asu.edu/TES_Dust_numeric?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/vicar&WIDTH=1440&HEIGHT=720&SRS=JMARS:4&BBOX=0,-90,360,90&STYLES=&VERSION=1.1.1&LAYERS=TES_Dust_numeric",
+    "citation": "Bandfield 2002, JGR 107 (TES dust spectral component, 16 km); ASU Mars Global Data Sets",
+    "kind": "continuous",
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0,
+          [
+            90,
+            60,
+            40
+          ]
+        ],
+        [
+          0.5,
+          [
+            200,
+            150,
+            100
+          ]
+        ],
+        [
+          1,
+          [
+            250,
+            235,
+            210
+          ]
+        ]
+      ],
+      "min": 0,
+      "max": 1.2467177391052244,
+      "units": "relative abundance (higher = dustier)",
+      "note": "Top 1% saturates."
+    }
+  },
+  {
+    "id": "albedo",
+    "name": "Albedo (TES bolometric)",
+    "units": "albedo 0\u20131",
+    "file": "layers/albedo.u16",
+    "png": "layers/albedo.png",
+    "width": 1440,
+    "height": 720,
+    "dtype": "uint16",
+    "offset": 0.08,
+    "scale": 3.967406231879635e-06,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": 0.08,
+    "max": 0.34,
+    "valid_share": 0.9687229938271605,
+    "source": "https://planetarymaps.usgs.gov/mosaic/Mars_MGS_TES_Albedo_mosaic_global_7410m.tif",
+    "citation": "Christensen et al. 2001, JGR 106; MGS TES, USGS Astrogeology mosaic (7.4 km)",
+    "kind": "continuous",
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0,
+          [
+            20,
+            20,
+            25
+          ]
+        ],
+        [
+          1,
+          [
+            245,
+            240,
+            230
+          ]
+        ]
+      ],
+      "min": 0.08,
+      "max": 0.34,
+      "units": "albedo 0\u20131"
+    }
+  },
+  {
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0,
+          [
+            20,
+            18,
+            40
+          ]
+        ],
+        [
+          0.25,
+          [
+            59,
+            82,
+            139
+          ]
+        ],
+        [
+          0.5,
+          [
+            33,
+            145,
+            140
+          ]
+        ],
+        [
+          0.75,
+          [
+            94,
+            201,
+            98
+          ]
+        ],
+        [
+          1,
+          [
+            253,
+            231,
+            37
+          ]
+        ]
+      ],
+      "min": 0,
+      "max": 0.7555555701255798,
+      "units": "Science term 0\u20131 (model)",
+      "note": "Geologic units + minerals above mid-range + named features, 100 km radius."
+    },
+    "id": "science",
+    "name": "Science score (model)",
+    "units": "Science term 0\u20131",
+    "file": "layers/science.u16",
+    "png": "layers/science.png",
+    "width": 360,
+    "height": 180,
+    "dtype": "uint16",
+    "offset": 0,
+    "scale": 1.5259254737998596e-05,
+    "nodata": 0,
+    "kind": "continuous",
+    "min": 0,
+    "max": 0.7555555701255798,
+    "decode": "value = offset + (q - 1) * scale",
+    "source": "computed by viewer/src/app/score/score.ts from SIM 3292, TES minerals, Gazetteer",
+    "citation": "MODEL: best-spot Science term (distinct geologic units + TES minerals above mid-range + named features within 100 km), evaluated on a 1\u00b0 grid with 20-km disk sampling"
+  },
+  {
+    "id": "wx_tmax",
+    "name": "Surface temperature, day max (MCD)",
+    "units": "\u00b0C",
+    "file": "layers/wx/wx_tmax_{m}.u16",
+    "png": "layers/wx/wx_tmax_{m}.png",
+    "width": 720,
+    "height": 360,
+    "dtype": "uint16",
+    "offset": -140,
+    "scale": 0.0027466658528397473,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": -140,
+    "max": 40,
+    "kind": "continuous",
+    "group": "weather",
+    "seasonal": true,
+    "season_note": "{m} = Mars month 01..12; month m covers Ls (m-1)*30..m*30",
+    "source": "http://www-mars.lmd.jussieu.fr/mars/access.html",
+    "citation": "Mars Climate Database v6.2 (Forget et al. 1999, JGR 104; Millour et al. 2018), LMD / ESA / CNES; climatology, average dust and solar EUV; 5.6 x 3.75 deg model grid. Model output, not observations.",
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0.0,
+          [
+            40,
+            30,
+            110
+          ]
+        ],
+        [
+          0.3,
+          [
+            50,
+            110,
+            200
+          ]
+        ],
+        [
+          0.55,
+          [
+            120,
+            210,
+            220
+          ]
+        ],
+        [
+          0.7,
+          [
+            240,
+            235,
+            200
+          ]
+        ],
+        [
+          0.85,
+          [
+            250,
+            170,
+            80
+          ]
+        ],
+        [
+          1.0,
+          [
+            220,
+            70,
+            40
+          ]
+        ]
+      ],
+      "min": -140,
+      "max": 40,
+      "units": "\u00b0C",
+      "note": "Daily maximum of the ground temperature this season. Same scale as the night minimum. Model climatology for the current season (Mars Climate Database)."
+    }
+  },
+  {
+    "id": "wx_tmin",
+    "name": "Surface temperature, night min (MCD)",
+    "units": "\u00b0C",
+    "file": "layers/wx/wx_tmin_{m}.u16",
+    "png": "layers/wx/wx_tmin_{m}.png",
+    "width": 720,
+    "height": 360,
+    "dtype": "uint16",
+    "offset": -140,
+    "scale": 0.0027466658528397473,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": -140,
+    "max": 40,
+    "kind": "continuous",
+    "group": "weather",
+    "seasonal": true,
+    "season_note": "{m} = Mars month 01..12; month m covers Ls (m-1)*30..m*30",
+    "source": "http://www-mars.lmd.jussieu.fr/mars/access.html",
+    "citation": "Mars Climate Database v6.2 (Forget et al. 1999, JGR 104; Millour et al. 2018), LMD / ESA / CNES; climatology, average dust and solar EUV; 5.6 x 3.75 deg model grid. Model output, not observations.",
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0.0,
+          [
+            40,
+            30,
+            110
+          ]
+        ],
+        [
+          0.3,
+          [
+            50,
+            110,
+            200
+          ]
+        ],
+        [
+          0.55,
+          [
+            120,
+            210,
+            220
+          ]
+        ],
+        [
+          0.7,
+          [
+            240,
+            235,
+            200
+          ]
+        ],
+        [
+          0.85,
+          [
+            250,
+            170,
+            80
+          ]
+        ],
+        [
+          1.0,
+          [
+            220,
+            70,
+            40
+          ]
+        ]
+      ],
+      "min": -140,
+      "max": 40,
+      "units": "\u00b0C",
+      "note": "Nightly minimum of the ground temperature this season. Model climatology for the current season (Mars Climate Database)."
+    }
+  },
+  {
+    "id": "wx_dust",
+    "name": "Dust opacity \u03c4 (MCD)",
+    "units": "\u03c4",
+    "file": "layers/wx/wx_dust_{m}.u16",
+    "png": "layers/wx/wx_dust_{m}.png",
+    "width": 720,
+    "height": 360,
+    "dtype": "uint16",
+    "offset": 0,
+    "scale": 1.2207403790398877e-05,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": 0,
+    "max": 0.8,
+    "kind": "continuous",
+    "group": "weather",
+    "seasonal": true,
+    "season_note": "{m} = Mars month 01..12; month m covers Ls (m-1)*30..m*30",
+    "source": "http://www-mars.lmd.jussieu.fr/mars/access.html",
+    "citation": "Mars Climate Database v6.2 (Forget et al. 1999, JGR 104; Millour et al. 2018), LMD / ESA / CNES; climatology, average dust and solar EUV; 5.6 x 3.75 deg model grid. Model output, not observations.",
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0.0,
+          [
+            250,
+            235,
+            200
+          ]
+        ],
+        [
+          0.35,
+          [
+            220,
+            170,
+            110
+          ]
+        ],
+        [
+          0.7,
+          [
+            160,
+            95,
+            50
+          ]
+        ],
+        [
+          1.0,
+          [
+            90,
+            45,
+            25
+          ]
+        ]
+      ],
+      "min": 0,
+      "max": 0.8,
+      "units": "\u03c4",
+      "note": "Daily mean visible dust optical depth (610 Pa). Above ~1 the sky is hazy and solar power drops. Model climatology for the current season (Mars Climate Database)."
+    }
+  },
+  {
+    "id": "wx_wind",
+    "name": "Near-surface wind, day max (MCD)",
+    "units": "m/s",
+    "file": "layers/wx/wx_wind_{m}.u16",
+    "png": "layers/wx/wx_wind_{m}.png",
+    "width": 720,
+    "height": 360,
+    "dtype": "uint16",
+    "offset": 0.0,
+    "scale": 0.0004272591326639607,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": 0.0,
+    "max": 28.0,
+    "kind": "continuous",
+    "group": "weather",
+    "seasonal": true,
+    "season_note": "{m} = Mars month 01..12; month m covers Ls (m-1)*30..m*30",
+    "source": "http://www-mars.lmd.jussieu.fr/mars/access.html",
+    "citation": "Mars Climate Database v6.2 (Forget et al. 1999, JGR 104; Millour et al. 2018), LMD / ESA / CNES; climatology, average dust and solar EUV; 5.6 x 3.75 deg model grid. Model output, not observations.",
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0.0,
+          [
+            30,
+            30,
+            60
+          ]
+        ],
+        [
+          0.3,
+          [
+            40,
+            110,
+            160
+          ]
+        ],
+        [
+          0.6,
+          [
+            90,
+            200,
+            160
+          ]
+        ],
+        [
+          0.85,
+          [
+            230,
+            225,
+            110
+          ]
+        ],
+        [
+          1.0,
+          [
+            250,
+            250,
+            230
+          ]
+        ]
+      ],
+      "min": 0.0,
+      "max": 28.0,
+      "units": "m/s",
+      "note": "Highest wind of the day ~4 m above the ground. Model climatology for the current season (Mars Climate Database)."
+    }
+  },
+  {
+    "id": "wx_sun",
+    "name": "Sunlight at the surface (MCD)",
+    "units": "W/m\u00b2",
+    "file": "layers/wx/wx_sun_{m}.u16",
+    "png": "layers/wx/wx_sun_{m}.png",
+    "width": 720,
+    "height": 360,
+    "dtype": "uint16",
+    "offset": 0.0,
+    "scale": 0.003509628589739677,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": 0.0,
+    "max": 230.0,
+    "kind": "continuous",
+    "group": "weather",
+    "seasonal": true,
+    "season_note": "{m} = Mars month 01..12; month m covers Ls (m-1)*30..m*30",
+    "source": "http://www-mars.lmd.jussieu.fr/mars/access.html",
+    "citation": "Mars Climate Database v6.2 (Forget et al. 1999, JGR 104; Millour et al. 2018), LMD / ESA / CNES; climatology, average dust and solar EUV; 5.6 x 3.75 deg model grid. Model output, not observations.",
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0.0,
+          [
+            20,
+            18,
+            30
+          ]
+        ],
+        [
+          0.35,
+          [
+            120,
+            60,
+            40
+          ]
+        ],
+        [
+          0.7,
+          [
+            230,
+            160,
+            60
+          ]
+        ],
+        [
+          1.0,
+          [
+            255,
+            245,
+            200
+          ]
+        ]
+      ],
+      "min": 0.0,
+      "max": 230.0,
+      "units": "W/m\u00b2",
+      "note": "Daily mean solar flux reaching the ground (dust included). Model climatology for the current season (Mars Climate Database)."
+    }
+  },
+  {
+    "id": "wx_frost",
+    "name": "Seasonal CO\u2082 frost (MCD)",
+    "units": "kg/m\u00b2",
+    "file": "layers/wx/wx_frost_{m}.u16",
+    "png": "layers/wx/wx_frost_{m}.png",
+    "width": 720,
+    "height": 360,
+    "dtype": "uint16",
+    "offset": 0,
+    "scale": 0.004577776421399579,
+    "nodata": 0,
+    "decode": "value = offset + (q - 1) * scale; q = 0 -> no data",
+    "min": 0,
+    "max": 300,
+    "kind": "continuous",
+    "group": "weather",
+    "seasonal": true,
+    "season_note": "{m} = Mars month 01..12; month m covers Ls (m-1)*30..m*30",
+    "source": "http://www-mars.lmd.jussieu.fr/mars/access.html",
+    "citation": "Mars Climate Database v6.2 (Forget et al. 1999, JGR 104; Millour et al. 2018), LMD / ESA / CNES; climatology, average dust and solar EUV; 5.6 x 3.75 deg model grid. Model output, not observations.",
+    "legend": {
+      "type": "ramp",
+      "stops": [
+        [
+          0.0,
+          [
+            170,
+            200,
+            235
+          ]
+        ],
+        [
+          0.5,
+          [
+            215,
+            230,
+            250
+          ]
+        ],
+        [
+          1.0,
+          [
+            255,
+            255,
+            255
+          ]
+        ]
+      ],
+      "min": 0,
+      "max": 300,
+      "units": "kg/m\u00b2",
+      "note": "Mean CO\u2082 ice on the ground; clear = no frost. Top end saturates. Model climatology for the current season (Mars Climate Database)."
+    }
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "viking": {
+    "file": "viking_8k.jpg",
+    "size": [
+      8192,
+      4096
+    ],
+    "tiles": 512,
+    "zoom": 4,
+    "source": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_Viking_MDIM21_ClrMosaic_global_232m",
+    "seconds": 105.2
+  },
+  "mola": {
+    "file": "mola_4k.i16",
+    "slope_file": "slope_4k.u8",
+    "width": 4096,
+    "height": 2048,
+    "dtype": "int16 little-endian, metres above the MOLA areoid",
+    "layout": "row 0 = 90N, col 0 = 180W",
+    "min_m": -8167,
+    "max_m": 21163,
+    "source": "https://planetarymaps.usgs.gov/mosaic/Mars_MGS_MOLA_DEM_mosaic_global_463m.tif",
+    "note": "nearest-neighbour decimation of the 463 m DEM; slope is km-scale (regional only)",
+    "seconds": 451.2
+  },
+  "landmarks": {
+    "file": "landmarks.json",
+    "count": 2055,
+    "source": "https://asc-planetarynames-data.s3.us-west-2.amazonaws.com/MARS_nomenclature_center_pts.zip",
+    "convention": "planetocentric latitude, east longitude stored -180..180 (MDIM 2.1 control)",
+    "seconds": 0.2
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "file": "mola_4k.i16",
+  "slope_file": "slope_4k.u8",
+  "width": 4096,
+  "height": 2048,
+  "dtype": "int16 little-endian, metres above the MOLA areoid",
+  "layout": "row 0 = 90N, col 0 = 180W",
+  "min_m": -8167,
+  "max_m": 21163,
+  "source": "https://planetarymaps.usgs.gov/mosaic/Mars_MGS_MOLA_DEM_mosaic_global_463m.tif",
+  "note": "nearest-neighbour decimation of the 463 m DEM; slope is km-scale (regional only)"
+}

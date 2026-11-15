@@ -1,0 +1,29 @@
+{
+  "anchor": {
+    "site": 105,
+    "drive": 418,
+    "sol": 3974,
+    "lon": 137.4045524,
+    "lat": -4.77647482,
+    "elev_geoid": -3764.26,
+    "roll": -9.22,
+    "pitch": 5.86,
+    "yaw": 142.99
+  },
+  "drives": [
+    {
+      "site": 105,
+      "drive": 418,
+      "sol": 3974,
+      "lon": 137.4045524,
+      "lat": -4.77647482,
+      "elev_geoid": -3764.26,
+      "roll": -9.22,
+      "pitch": 5.86,
+      "yaw": 142.99,
+      "n_images": null
+    }
+  ],
+  "mission": "msl",
+  "source": "https://mars.nasa.gov/mmgis-maps/MSL/Layers/json/MSL_waypoints.json"
+}

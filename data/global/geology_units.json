@@ -1,0 +1,530 @@
+[
+  {
+    "index": 1,
+    "code": "mNh",
+    "age": "Noachian",
+    "name": "Middle Noachian highland unit",
+    "attrs": {
+      "OBJECTID": 1189,
+      "Unit": "mNh",
+      "UnitDesc": "Middle Noachian highland unit",
+      "SphArea_km": 15799800.0
+    }
+  },
+  {
+    "index": 2,
+    "code": "lHl",
+    "age": "Hesperian",
+    "name": "Late Hesperian lowland unit",
+    "attrs": {
+      "OBJECTID": 1303,
+      "Unit": "lHl",
+      "UnitDesc": "Late Hesperian lowland unit",
+      "SphArea_km": 13442100.0
+    }
+  },
+  {
+    "index": 3,
+    "code": "AHv",
+    "age": "Amazonian",
+    "name": "Amazonian and Hesperian volcanic",
+    "attrs": {
+      "OBJECTID": 1264,
+      "Unit": "AHv",
+      "UnitDesc": "Amazonian and Hesperian volcanic",
+      "SphArea_km": 10105400.0
+    }
+  },
+  {
+    "index": 4,
+    "code": "Apu",
+    "age": "Amazonian",
+    "name": "Amazonian polar undivided unit",
+    "attrs": {
+      "OBJECTID": 21,
+      "Unit": "Apu",
+      "UnitDesc": "Amazonian polar undivided unit",
+      "SphArea_km": 1495810.0
+    }
+  },
+  {
+    "index": 5,
+    "code": "eNh",
+    "age": "Noachian",
+    "name": "Early Noachian highland unit",
+    "attrs": {
+      "OBJECTID": 846,
+      "Unit": "eNh",
+      "UnitDesc": "Early Noachian highland unit",
+      "SphArea_km": 3851530.0
+    }
+  },
+  {
+    "index": 6,
+    "code": "lApc",
+    "age": "Amazonian",
+    "name": "Late Amazonian polar cap unit",
+    "attrs": {
+      "OBJECTID": 1311,
+      "Unit": "lApc",
+      "UnitDesc": "Late Amazonian polar cap unit",
+      "SphArea_km": 596893.0
+    }
+  },
+  {
+    "index": 7,
+    "code": "lHt",
+    "age": "Hesperian",
+    "name": "Late Hesperian transition unit",
+    "attrs": {
+      "OBJECTID": 1205,
+      "Unit": "lHt",
+      "UnitDesc": "Late Hesperian transition unit",
+      "SphArea_km": 944299.0
+    }
+  },
+  {
+    "index": 8,
+    "code": "Hp",
+    "age": "Hesperian",
+    "name": "Hesperian polar unit",
+    "attrs": {
+      "OBJECTID": 67,
+      "Unit": "Hp",
+      "UnitDesc": "Hesperian polar unit",
+      "SphArea_km": 885405.0
+    }
+  },
+  {
+    "index": 9,
+    "code": "lNv",
+    "age": "Noachian",
+    "name": "Late Noachian volcanic unit",
+    "attrs": {
+      "OBJECTID": 217,
+      "Unit": "lNv",
+      "UnitDesc": "Late Noachian volcanic unit",
+      "SphArea_km": 1628730.0
+    }
+  },
+  {
+    "index": 10,
+    "code": "mAl",
+    "age": "Amazonian",
+    "name": "Middle Amazonian lowland unit",
+    "attrs": {
+      "OBJECTID": 1305,
+      "Unit": "mAl",
+      "UnitDesc": "Middle Amazonian lowland unit",
+      "SphArea_km": 869692.0
+    }
+  },
+  {
+    "index": 11,
+    "code": "eHt",
+    "age": "Hesperian",
+    "name": "Early Hesperian transition unit",
+    "attrs": {
+      "OBJECTID": 1228,
+      "Unit": "eHt",
+      "UnitDesc": "Early Hesperian transition unit",
+      "SphArea_km": 685685.0
+    }
+  },
+  {
+    "index": 12,
+    "code": "eHv",
+    "age": "Hesperian",
+    "name": "Early Hesperian volcanic unit",
+    "attrs": {
+      "OBJECTID": 780,
+      "Unit": "eHv",
+      "UnitDesc": "Early Hesperian volcanic unit",
+      "SphArea_km": 1781520.0
+    }
+  },
+  {
+    "index": 13,
+    "code": "eNhm",
+    "age": "Noachian",
+    "name": "Early Noachian highland massif unit",
+    "attrs": {
+      "OBJECTID": 403,
+      "Unit": "eNhm",
+      "UnitDesc": "Early Noachian highland massif unit",
+      "SphArea_km": 1116110.0
+    }
+  },
+  {
+    "index": 14,
+    "code": "mNhm",
+    "age": "Noachian",
+    "name": "Middle Noachian highland massif unit",
+    "attrs": {
+      "OBJECTID": 352,
+      "Unit": "mNhm",
+      "UnitDesc": "Middle Noachian highland massif unit",
+      "SphArea_km": 1290610.0
+    }
+  },
+  {
+    "index": 15,
+    "code": "lNh",
+    "age": "Noachian",
+    "name": "Late Noachian highland unit",
+    "attrs": {
+      "OBJECTID": 614,
+      "Unit": "lNh",
+      "UnitDesc": "Late Noachian highland unit",
+      "SphArea_km": 723192.0
+    }
+  },
+  {
+    "index": 16,
+    "code": "lAv",
+    "age": "Amazonian",
+    "name": "Late Amazonian volcanic unit",
+    "attrs": {
+      "OBJECTID": 1190,
+      "Unit": "lAv",
+      "UnitDesc": "Late Amazonian volcanic unit",
+      "SphArea_km": 1248060.0
+    }
+  },
+  {
+    "index": 17,
+    "code": "lHv",
+    "age": "Hesperian",
+    "name": "Late Hesperian volcanic unit",
+    "attrs": {
+      "OBJECTID": 806,
+      "Unit": "lHv",
+      "UnitDesc": "Late Hesperian volcanic unit",
+      "SphArea_km": 1607570.0
+    }
+  },
+  {
+    "index": 18,
+    "code": "Av",
+    "age": "Amazonian",
+    "name": "Amazonian volcanic unit",
+    "attrs": {
+      "OBJECTID": 1255,
+      "Unit": "Av",
+      "UnitDesc": "Amazonian volcanic unit",
+      "SphArea_km": 885013.0
+    }
+  },
+  {
+    "index": 19,
+    "code": "HNt",
+    "age": "Hesperian",
+    "name": "Hesperian and Noachian transition unit",
+    "attrs": {
+      "OBJECTID": 1214,
+      "Unit": "HNt",
+      "UnitDesc": "Hesperian and Noachian transition unit",
+      "SphArea_km": 547126.0
+    }
+  },
+  {
+    "index": 20,
+    "code": "Hto",
+    "age": "Hesperian",
+    "name": "Hesperian transition outflow unit",
+    "attrs": {
+      "OBJECTID": 1153,
+      "Unit": "Hto",
+      "UnitDesc": "Hesperian transition outflow unit",
+      "SphArea_km": 927700.0
+    }
+  },
+  {
+    "index": 21,
+    "code": "Nhu",
+    "age": "Noachian",
+    "name": "Noachian highland undivided unit",
+    "attrs": {
+      "OBJECTID": 726,
+      "Unit": "Nhu",
+      "UnitDesc": "Noachian highland undivided unit",
+      "SphArea_km": 374449.0
+    }
+  },
+  {
+    "index": 22,
+    "code": "lHb",
+    "age": "Hesperian",
+    "name": "Late Hesperian basin unit",
+    "attrs": {
+      "OBJECTID": 399,
+      "Unit": "lHb",
+      "UnitDesc": "Late Hesperian basin unit",
+      "SphArea_km": 912198.0
+    }
+  },
+  {
+    "index": 23,
+    "code": "AHtu",
+    "age": "Amazonian",
+    "name": "Amazonian and Hesperian transition undivided unit",
+    "attrs": {
+      "OBJECTID": 991,
+      "Unit": "AHtu",
+      "UnitDesc": "Amazonian and Hesperian transition undivided unit",
+      "SphArea_km": 939380.0
+    }
+  },
+  {
+    "index": 24,
+    "code": "Ap",
+    "age": "Amazonian",
+    "name": "Amazonian polar unit",
+    "attrs": {
+      "OBJECTID": 15,
+      "Unit": "Ap",
+      "UnitDesc": "Amazonian polar unit",
+      "SphArea_km": 221101.0
+    }
+  },
+  {
+    "index": 25,
+    "code": "eHb",
+    "age": "Hesperian",
+    "name": "Early Hesperian basin unit",
+    "attrs": {
+      "OBJECTID": 416,
+      "Unit": "eHb",
+      "UnitDesc": "Early Hesperian basin unit",
+      "SphArea_km": 363098.0
+    }
+  },
+  {
+    "index": 26,
+    "code": "eAb",
+    "age": "Amazonian",
+    "name": "Early Amazonian basin unit",
+    "attrs": {
+      "OBJECTID": 1227,
+      "Unit": "eAb",
+      "UnitDesc": "Early Amazonian basin unit",
+      "SphArea_km": 526240.0
+    }
+  },
+  {
+    "index": 27,
+    "code": "HNhu",
+    "age": "Hesperian",
+    "name": "Hesperian and Noachian highland undivided unit",
+    "attrs": {
+      "OBJECTID": 970,
+      "Unit": "HNhu",
+      "UnitDesc": "Hesperian and Noachian highland undivided unit",
+      "SphArea_km": 579207.0
+    }
+  },
+  {
+    "index": 28,
+    "code": "Hpe",
+    "age": "Hesperian",
+    "name": "Hesperian polar edifice unit",
+    "attrs": {
+      "OBJECTID": 1300,
+      "Unit": "Hpe",
+      "UnitDesc": "Hesperian polar edifice unit",
+      "SphArea_km": 180368.0
+    }
+  },
+  {
+    "index": 29,
+    "code": "eHh",
+    "age": "Hesperian",
+    "name": "Early Hesperian highland unit",
+    "attrs": {
+      "OBJECTID": 1033,
+      "Unit": "eHh",
+      "UnitDesc": "Early Hesperian highland unit",
+      "SphArea_km": 765600.0
+    }
+  },
+  {
+    "index": 30,
+    "code": "Aa",
+    "age": "Amazonian",
+    "name": "Amazonian apron unit",
+    "attrs": {
+      "OBJECTID": 1130,
+      "Unit": "Aa",
+      "UnitDesc": "Amazonian apron unit",
+      "SphArea_km": 726564.0
+    }
+  },
+  {
+    "index": 31,
+    "code": "lApd",
+    "age": "Amazonian",
+    "name": "Late Amazonian polar dunes unit",
+    "attrs": {
+      "OBJECTID": 1307,
+      "Unit": "lApd",
+      "UnitDesc": "Late Amazonian polar dunes unit",
+      "SphArea_km": 113208.0
+    }
+  },
+  {
+    "index": 32,
+    "code": "AHi",
+    "age": "Amazonian",
+    "name": "Amazonian and Hesperian impact unit",
+    "attrs": {
+      "OBJECTID": 1256,
+      "Unit": "AHi",
+      "UnitDesc": "Amazonian and Hesperian impact unit",
+      "SphArea_km": 437066.0
+    }
+  },
+  {
+    "index": 33,
+    "code": "Hpu",
+    "age": "Hesperian",
+    "name": "Hesperian polar undivided unit",
+    "attrs": {
+      "OBJECTID": 1308,
+      "Unit": "Hpu",
+      "UnitDesc": "Hesperian polar undivided unit",
+      "SphArea_km": 34509.9
+    }
+  },
+  {
+    "index": 34,
+    "code": "HNb",
+    "age": "Hesperian",
+    "name": "Hesperian and Noachian basin unit",
+    "attrs": {
+      "OBJECTID": 397,
+      "Unit": "HNb",
+      "UnitDesc": "Hesperian and Noachian basin unit",
+      "SphArea_km": 249740.0
+    }
+  },
+  {
+    "index": 35,
+    "code": "ANa",
+    "age": "Amazonian",
+    "name": "Amazonian and Noachian apron unit",
+    "attrs": {
+      "OBJECTID": 1204,
+      "Unit": "ANa",
+      "UnitDesc": "Amazonian and Noachian apron unit",
+      "SphArea_km": 195893.0
+    }
+  },
+  {
+    "index": 36,
+    "code": "Ht",
+    "age": "Hesperian",
+    "name": "Hesperian transition unit",
+    "attrs": {
+      "OBJECTID": 817,
+      "Unit": "Ht",
+      "UnitDesc": "Hesperian transition unit",
+      "SphArea_km": 202937.0
+    }
+  },
+  {
+    "index": 37,
+    "code": "Htu",
+    "age": "Hesperian",
+    "name": "Hesperian transition undivided unit",
+    "attrs": {
+      "OBJECTID": 847,
+      "Unit": "Htu",
+      "UnitDesc": "Hesperian transition undivided unit",
+      "SphArea_km": 197425.0
+    }
+  },
+  {
+    "index": 38,
+    "code": "Ave",
+    "age": "Amazonian",
+    "name": "Amazonian volcanic edifice",
+    "attrs": {
+      "OBJECTID": 1046,
+      "Unit": "Ave",
+      "UnitDesc": "Amazonian volcanic edifice",
+      "SphArea_km": 375907.0
+    }
+  },
+  {
+    "index": 39,
+    "code": "lAa",
+    "age": "Amazonian",
+    "name": "Late Amazonian apron unit",
+    "attrs": {
+      "OBJECTID": 774,
+      "Unit": "lAa",
+      "UnitDesc": "Late Amazonian apron unit",
+      "SphArea_km": 176688.0
+    }
+  },
+  {
+    "index": 40,
+    "code": "lHvf",
+    "age": "Hesperian",
+    "name": "Late Hesperian volcanic field unit",
+    "attrs": {
+      "OBJECTID": 1173,
+      "Unit": "lHvf",
+      "UnitDesc": "Late Hesperian volcanic field unit",
+      "SphArea_km": 107190.0
+    }
+  },
+  {
+    "index": 41,
+    "code": "Hve",
+    "age": "Hesperian",
+    "name": "Hesperian volcanic edifice unit",
+    "attrs": {
+      "OBJECTID": 442,
+      "Unit": "Hve",
+      "UnitDesc": "Hesperian volcanic edifice unit",
+      "SphArea_km": 96811.6
+    }
+  },
+  {
+    "index": 42,
+    "code": "Nve",
+    "age": "Noachian",
+    "name": "Noachian volcanic edifice unit",
+    "attrs": {
+      "OBJECTID": 593,
+      "Unit": "Nve",
+      "UnitDesc": "Noachian volcanic edifice unit",
+      "SphArea_km": 80876.6
+    }
+  },
+  {
+    "index": 43,
+    "code": "lAvf",
+    "age": "Amazonian",
+    "name": "Late Amazonian volcanic field unit",
+    "attrs": {
+      "OBJECTID": 924,
+      "Unit": "lAvf",
+      "UnitDesc": "Late Amazonian volcanic field unit",
+      "SphArea_km": 98882.1
+    }
+  },
+  {
+    "index": 44,
+    "code": "Nhe",
+    "age": "Noachian",
+    "name": "Noachian highland edifice unit",
+    "attrs": {
+      "OBJECTID": 305,
+      "Unit": "Nhe",
+      "UnitDesc": "Noachian highland edifice unit",
+      "SphArea_km": 18746.0
+    }
+  }
+]

@@ -1,0 +1,1658 @@
+{
+ "generated": "2026-11-14T14:07:04.304Z",
+ "weights": {
+  "science": 1,
+  "safety": 1,
+  "access": 1
+ },
+ "radius_km": 100,
+ "note": "recomputed live in the app when the weight sliders move (same code: src/app/score/score.ts)",
+ "ranked": [
+  {
+   "rank": 1,
+   "id": "ez1034",
+   "name": "Jezero Crater watershed",
+   "lat": 17.747,
+   "lon": 77.037,
+   "score": 0.8659,
+   "terms": {
+    "science": 0.7555555555555555,
+    "safety": 1,
+    "access": 0.8422499999999999
+   },
+   "contrib": {
+    "science": 0.2518518518518518,
+    "safety": 0.3333333333333333,
+    "access": 0.28075
+   },
+   "features": {
+    "units": 5,
+    "unitCodes": [
+     "eHv",
+     "mNhm",
+     "lHt",
+     "HNt",
+     "mNh"
+    ],
+    "minerals": [
+     "Plagioclase",
+     "Carbonate",
+     "Clinopyroxene"
+    ],
+    "names": 14,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -2107,
+    "absLat": 17.747,
+    "samples": 875
+   }
+  },
+  {
+   "rank": 2,
+   "id": "ez1007",
+   "name": "Eastern Melas Chasma",
+   "lat": -11.7,
+   "lon": -70,
+   "score": 0.8064,
+   "terms": {
+    "science": 0.4555555555555555,
+    "safety": 0.9635119726339795,
+    "access": 1
+   },
+   "contrib": {
+    "science": 0.15185185185185182,
+    "safety": 0.32117065754465984,
+    "access": 0.3333333333333333
+   },
+   "features": {
+    "units": 4,
+    "unitCodes": [
+     "Htu",
+     "Nhu",
+     "lHt",
+     "Aa"
+    ],
+    "minerals": [
+     "Quartz",
+     "Carbonate",
+     "Clinopyroxene"
+    ],
+    "names": 3,
+    "steepShare": 0.036488027366020526,
+    "dustShare": 0,
+    "elev_m": -4213,
+    "absLat": 11.7,
+    "samples": 877
+   }
+  },
+  {
+   "rank": 3,
+   "id": "ez1019",
+   "name": "Chryse Planitia - Viking 1 site",
+   "lat": 22.3,
+   "lon": -48.3,
+   "score": 0.8037,
+   "terms": {
+    "science": 0.4444444444444444,
+    "safety": 1,
+    "access": 0.9666666666666667
+   },
+   "contrib": {
+    "science": 0.14814814814814814,
+    "safety": 0.3333333333333333,
+    "access": 0.32222222222222224
+   },
+   "features": {
+    "units": 2,
+    "unitCodes": [
+     "Hto",
+     "eHt"
+    ],
+    "minerals": [],
+    "names": 29,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -3600,
+    "absLat": 22.3,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 4,
+   "id": "ez1054",
+   "name": "Eastern outlet of Valles Marineris",
+   "lat": -4.6,
+   "lon": -35.15,
+   "score": 0.7817,
+   "terms": {
+    "science": 0.4222222222222222,
+    "safety": 0.9646522234891676,
+    "access": 0.95825
+   },
+   "contrib": {
+    "science": 0.14074074074074075,
+    "safety": 0.3215507411630559,
+    "access": 0.3194166666666667
+   },
+   "features": {
+    "units": 4,
+    "unitCodes": [
+     "Hto",
+     "Ht",
+     "mNh",
+     "AHi"
+    ],
+    "minerals": [
+     "Carbonate",
+     "Clinopyroxene"
+    ],
+    "names": 4,
+    "steepShare": 0.03534777651083238,
+    "dustShare": 0,
+    "elev_m": -3499,
+    "absLat": 4.6,
+    "samples": 877
+   }
+  },
+  {
+   "rank": 5,
+   "id": "ez1052",
+   "name": "Hadriacus Palus",
+   "lat": -26.84,
+   "lon": 77.47,
+   "score": 0.7746,
+   "terms": {
+    "science": 0.48888888888888893,
+    "safety": 0.9988545246277205,
+    "access": 0.8361666666666667
+   },
+   "contrib": {
+    "science": 0.16296296296296298,
+    "safety": 0.3329515082092402,
+    "access": 0.27872222222222226
+   },
+   "features": {
+    "units": 3,
+    "unitCodes": [
+     "eNhm",
+     "mNh",
+     "lNh"
+    ],
+    "minerals": [
+     "Plagioclase",
+     "Carbonate",
+     "Clinopyroxene"
+    ],
+    "names": 7,
+    "steepShare": 0.001145475372279496,
+    "dustShare": 0,
+    "elev_m": -2034,
+    "absLat": 26.84,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 6,
+   "id": "ez1009",
+   "name": "Mawrth Vallis plateau",
+   "lat": 24.3,
+   "lon": -19.2,
+   "score": 0.7643,
+   "terms": {
+    "science": 0.36666666666666664,
+    "safety": 1,
+    "access": 0.9263333333333333
+   },
+   "contrib": {
+    "science": 0.12222222222222222,
+    "safety": 0.3333333333333333,
+    "access": 0.30877777777777776
+   },
+   "features": {
+    "units": 4,
+    "unitCodes": [
+     "eNh",
+     "mNh",
+     "AHi",
+     "lHt"
+    ],
+    "minerals": [
+     "Carbonate"
+    ],
+    "names": 4,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -3116,
+    "absLat": 24.3,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 7,
+   "id": "ez1022",
+   "name": "Gale region (Yun)",
+   "lat": -4.6,
+   "lon": 137,
+   "score": 0.7501,
+   "terms": {
+    "science": 0.38888888888888884,
+    "safety": 0.9942987457240593,
+    "access": 0.8671666666666666
+   },
+   "contrib": {
+    "science": 0.12962962962962962,
+    "safety": 0.3314329152413531,
+    "access": 0.28905555555555557
+   },
+   "features": {
+    "units": 3,
+    "unitCodes": [
+     "AHi",
+     "Htu",
+     "eHt"
+    ],
+    "minerals": [],
+    "names": 10,
+    "steepShare": 0.005701254275940707,
+    "dustShare": 0,
+    "elev_m": -2406,
+    "absLat": 4.6,
+    "samples": 877
+   }
+  },
+  {
+   "rank": 8,
+   "id": "ez1020",
+   "name": "Gale Crater (Assessing Gale)",
+   "lat": -5.3672,
+   "lon": 137.811,
+   "score": 0.7362,
+   "terms": {
+    "science": 0.3666666666666667,
+    "safety": 0.9954389965792474,
+    "access": 0.8464166666666666
+   },
+   "contrib": {
+    "science": 0.12222222222222223,
+    "safety": 0.33181299885974913,
+    "access": 0.2821388888888889
+   },
+   "features": {
+    "units": 3,
+    "unitCodes": [
+     "AHi",
+     "Htu",
+     "HNt"
+    ],
+    "minerals": [],
+    "names": 9,
+    "steepShare": 0.004561003420752566,
+    "dustShare": 0,
+    "elev_m": -2157,
+    "absLat": 5.3672,
+    "samples": 877
+   }
+  },
+  {
+   "rank": 9,
+   "id": "ez1040",
+   "name": "Gale Crater region (MSL ground truth)",
+   "lat": -5.3672,
+   "lon": 137.811,
+   "score": 0.7362,
+   "terms": {
+    "science": 0.3666666666666667,
+    "safety": 0.9954389965792474,
+    "access": 0.8464166666666666
+   },
+   "contrib": {
+    "science": 0.12222222222222223,
+    "safety": 0.33181299885974913,
+    "access": 0.2821388888888889
+   },
+   "features": {
+    "units": 3,
+    "unitCodes": [
+     "AHi",
+     "Htu",
+     "HNt"
+    ],
+    "minerals": [],
+    "names": 9,
+    "steepShare": 0.004561003420752566,
+    "dustShare": 0,
+    "elev_m": -2157,
+    "absLat": 5.3672,
+    "samples": 877
+   }
+  },
+  {
+   "rank": 10,
+   "id": "ez1057",
+   "name": "Southern edge of Meridiani Planum",
+   "lat": -3.174,
+   "lon": -4.5173,
+   "score": 0.7352,
+   "terms": {
+    "science": 0.4222222222222222,
+    "safety": 1,
+    "access": 0.7835
+   },
+   "contrib": {
+    "science": 0.14074074074074075,
+    "safety": 0.3333333333333333,
+    "access": 0.26116666666666666
+   },
+   "features": {
+    "units": 2,
+    "unitCodes": [
+     "mNh",
+     "HNhu"
+    ],
+    "minerals": [
+     "Hematite",
+     "Olivine",
+     "K-feldspar",
+     "Clinopyroxene"
+    ],
+    "names": 4,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -1402,
+    "absLat": 3.174,
+    "samples": 877
+   }
+  },
+  {
+   "rank": 11,
+   "id": "ez1010",
+   "name": "Nili Fossae",
+   "lat": 22.05,
+   "lon": 76.95,
+   "score": 0.7335,
+   "terms": {
+    "science": 0.4888888888888889,
+    "safety": 1,
+    "access": 0.7115
+   },
+   "contrib": {
+    "science": 0.16296296296296295,
+    "safety": 0.3333333333333333,
+    "access": 0.23716666666666666
+   },
+   "features": {
+    "units": 4,
+    "unitCodes": [
+     "AHi",
+     "mNh",
+     "mNhm",
+     "eNh"
+    ],
+    "minerals": [
+     "Olivine",
+     "Plagioclase",
+     "Carbonate",
+     "Clinopyroxene"
+    ],
+    "names": 2,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -538,
+    "absLat": 22.05,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 12,
+   "id": "ez1025",
+   "name": "McLaughlin Crater",
+   "lat": 21.9,
+   "lon": -22.4,
+   "score": 0.7333,
+   "terms": {
+    "science": 0.26666666666666666,
+    "safety": 1,
+    "access": 0.9331666666666667
+   },
+   "contrib": {
+    "science": 0.08888888888888889,
+    "safety": 0.3333333333333333,
+    "access": 0.3110555555555556
+   },
+   "features": {
+    "units": 4,
+    "unitCodes": [
+     "eNh",
+     "AHi",
+     "mNh",
+     "HNt"
+    ],
+    "minerals": [],
+    "names": 2,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -3198,
+    "absLat": 21.9,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 13,
+   "id": "ez1048",
+   "name": "Aram Chaos",
+   "lat": 2.5233,
+   "lon": -22.3916,
+   "score": 0.7307,
+   "terms": {
+    "science": 0.3,
+    "safety": 1,
+    "access": 0.8921666666666667
+   },
+   "contrib": {
+    "science": 0.09999999999999999,
+    "safety": 0.3333333333333333,
+    "access": 0.29738888888888887
+   },
+   "features": {
+    "units": 3,
+    "unitCodes": [
+     "mNh",
+     "Ht",
+     "Htu"
+    ],
+    "minerals": [
+     "Carbonate",
+     "Clinopyroxene"
+    ],
+    "names": 1,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -2706,
+    "absLat": 2.5233,
+    "samples": 877
+   }
+  },
+  {
+   "rank": 14,
+   "id": "ez1035",
+   "name": "Mesopotamia - east rim of Hellas",
+   "lat": -35.352,
+   "lon": 94.02,
+   "score": 0.7126,
+   "terms": {
+    "science": 0.3444444444444444,
+    "safety": 0.997709049255441,
+    "access": 0.7957166666666667
+   },
+   "contrib": {
+    "science": 0.1148148148148148,
+    "safety": 0.332569683085147,
+    "access": 0.2652388888888889
+   },
+   "features": {
+    "units": 4,
+    "unitCodes": [
+     "eHv",
+     "ANa",
+     "AHi",
+     "lHv"
+    ],
+    "minerals": [
+     "Carbonate"
+    ],
+    "names": 3,
+    "steepShare": 0.002290950744558992,
+    "dustShare": 0,
+    "elev_m": -2619,
+    "absLat": 35.352,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 15,
+   "id": "ez1045",
+   "name": "Ausonia Cavus",
+   "lat": -32,
+   "lon": 96.5,
+   "score": 0.7119,
+   "terms": {
+    "science": 0.35555555555555557,
+    "safety": 1,
+    "access": 0.7801666666666667
+   },
+   "contrib": {
+    "science": 0.11851851851851852,
+    "safety": 0.3333333333333333,
+    "access": 0.26005555555555554
+   },
+   "features": {
+    "units": 4,
+    "unitCodes": [
+     "lHv",
+     "eHv",
+     "Hve",
+     "eNhm"
+    ],
+    "minerals": [
+     "Carbonate",
+     "Clinopyroxene"
+    ],
+    "names": 1,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -1762,
+    "absLat": 32,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 16,
+   "id": "ez1012",
+   "name": "Hebrus Valles",
+   "lat": 19.8793,
+   "lon": 126.7387,
+   "score": 0.7021,
+   "terms": {
+    "science": 0.13333333333333333,
+    "safety": 1,
+    "access": 0.9728333333333333
+   },
+   "contrib": {
+    "science": 0.044444444444444446,
+    "safety": 0.3333333333333333,
+    "access": 0.3242777777777778
+   },
+   "features": {
+    "units": 2,
+    "unitCodes": [
+     "lHt",
+     "lHl"
+    ],
+    "minerals": [],
+    "names": 1,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -3674,
+    "absLat": 19.8793,
+    "samples": 875
+   }
+  },
+  {
+   "rank": 17,
+   "id": "ez1005",
+   "name": "Southern Nectaris Fossae",
+   "lat": -23.085,
+   "lon": -57.1568,
+   "score": 0.6926,
+   "terms": {
+    "science": 0.5777777777777777,
+    "safety": 1,
+    "access": 0.5
+   },
+   "contrib": {
+    "science": 0.19259259259259257,
+    "safety": 0.3333333333333333,
+    "access": 0.16666666666666666
+   },
+   "features": {
+    "units": 4,
+    "unitCodes": [
+     "mNh",
+     "Nhu",
+     "lNh",
+     "lNv"
+    ],
+    "minerals": [
+     "Olivine",
+     "Plagioclase",
+     "Carbonate",
+     "Clinopyroxene",
+     "Orthopyroxene",
+     "Sheet silicates / glass"
+    ],
+    "names": 1,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": 2748,
+    "absLat": 23.085,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 18,
+   "id": "ez1044",
+   "name": "Deuteronilus Mensae",
+   "lat": 42,
+   "lon": 22,
+   "score": 0.6908,
+   "terms": {
+    "science": 0.3,
+    "safety": 1,
+    "access": 0.7725
+   },
+   "contrib": {
+    "science": 0.09999999999999999,
+    "safety": 0.3333333333333333,
+    "access": 0.2575
+   },
+   "features": {
+    "units": 4,
+    "unitCodes": [
+     "ANa",
+     "eHt",
+     "AHi",
+     "mNh"
+    ],
+    "minerals": [
+     "Hematite"
+    ],
+    "names": 1,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -3670,
+    "absLat": 42,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 19,
+   "id": "ez1036",
+   "name": "Coprates Chasma (Valles Marineris)",
+   "lat": -11.684,
+   "lon": -66.633,
+   "score": 0.6897,
+   "terms": {
+    "science": 0.4777777777777778,
+    "safety": 0.7537058152793614,
+    "access": 0.8376666666666667
+   },
+   "contrib": {
+    "science": 0.15925925925925927,
+    "safety": 0.25123527175978716,
+    "access": 0.2792222222222222
+   },
+   "features": {
+    "units": 5,
+    "unitCodes": [
+     "Aa",
+     "Nhu",
+     "lHt",
+     "eHh",
+     "eNh"
+    ],
+    "minerals": [
+     "Carbonate",
+     "Clinopyroxene"
+    ],
+    "names": 4,
+    "steepShare": 0.18814139110604333,
+    "dustShare": 0.05815279361459521,
+    "elev_m": -2052,
+    "absLat": 11.684,
+    "samples": 877
+   }
+  },
+  {
+   "rank": 20,
+   "id": "ez1002",
+   "name": "Arcadia Planitia (Phlegra Dorsa)",
+   "lat": 39,
+   "lon": 172,
+   "score": 0.6884,
+   "terms": {
+    "science": 0.2222222222222222,
+    "safety": 1,
+    "access": 0.8429166666666666
+   },
+   "contrib": {
+    "science": 0.07407407407407407,
+    "safety": 0.3333333333333333,
+    "access": 0.28097222222222223
+   },
+   "features": {
+    "units": 3,
+    "unitCodes": [
+     "eHt",
+     "lHt",
+     "lHl"
+    ],
+    "minerals": [
+     "Orthopyroxene"
+    ],
+    "names": 0,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -3915,
+    "absLat": 39,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 21,
+   "id": "ez1030",
+   "name": "Meridiani Planum (Opportunity)",
+   "lat": -0.04,
+   "lon": -3.14,
+   "score": 0.6806,
+   "terms": {
+    "science": 0.26666666666666666,
+    "safety": 1,
+    "access": 0.7750833333333333
+   },
+   "contrib": {
+    "science": 0.08888888888888889,
+    "safety": 0.3333333333333333,
+    "access": 0.2583611111111111
+   },
+   "features": {
+    "units": 1,
+    "unitCodes": [
+     "HNhu"
+    ],
+    "minerals": [
+     "Hematite",
+     "Olivine",
+     "K-feldspar"
+    ],
+    "names": 2,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -1301,
+    "absLat": 0.04,
+    "samples": 877
+   }
+  },
+  {
+   "rank": 22,
+   "id": "ez1042",
+   "name": "SW Sinus Meridiani",
+   "lat": -0.04,
+   "lon": -3.14,
+   "score": 0.6806,
+   "terms": {
+    "science": 0.26666666666666666,
+    "safety": 1,
+    "access": 0.7750833333333333
+   },
+   "contrib": {
+    "science": 0.08888888888888889,
+    "safety": 0.3333333333333333,
+    "access": 0.2583611111111111
+   },
+   "features": {
+    "units": 1,
+    "unitCodes": [
+     "HNhu"
+    ],
+    "minerals": [
+     "Hematite",
+     "Olivine",
+     "K-feldspar"
+    ],
+    "names": 2,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -1301,
+    "absLat": 0.04,
+    "samples": 877
+   }
+  },
+  {
+   "rank": 23,
+   "id": "ez1049",
+   "name": "Holden Crater",
+   "lat": -26.04,
+   "lon": -34.019,
+   "score": 0.6773,
+   "terms": {
+    "science": 0.26666666666666666,
+    "safety": 1,
+    "access": 0.76525
+   },
+   "contrib": {
+    "science": 0.08888888888888889,
+    "safety": 0.3333333333333333,
+    "access": 0.25508333333333333
+   },
+   "features": {
+    "units": 1,
+    "unitCodes": [
+     "AHi"
+    ],
+    "minerals": [
+     "Plagioclase",
+     "Carbonate",
+     "Clinopyroxene"
+    ],
+    "names": 2,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -1183,
+    "absLat": 26.04,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 24,
+   "id": "ez1006",
+   "name": "Valles Marineris mouth",
+   "lat": -14.0059,
+   "lon": -58.5877,
+   "score": 0.6571,
+   "terms": {
+    "science": 0.5222222222222223,
+    "safety": 0.7965714285714286,
+    "access": 0.6525833333333333
+   },
+   "contrib": {
+    "science": 0.17407407407407408,
+    "safety": 0.26552380952380955,
+    "access": 0.21752777777777776
+   },
+   "features": {
+    "units": 6,
+    "unitCodes": [
+     "lNh",
+     "Nhu",
+     "Ht",
+     "lNv",
+     "Aa",
+     "lHt"
+    ],
+    "minerals": [
+     "Plagioclase",
+     "Carbonate",
+     "Clinopyroxene"
+    ],
+    "names": 1,
+    "steepShare": 0.20342857142857143,
+    "dustShare": 0,
+    "elev_m": 169,
+    "absLat": 14.0059,
+    "samples": 875
+   }
+  },
+  {
+   "rank": 25,
+   "id": "ez1026",
+   "name": "South of Firsoff Crater (Arabia Terra)",
+   "lat": 0.3911,
+   "lon": -8.3625,
+   "score": 0.6519,
+   "terms": {
+    "science": 0.13333333333333333,
+    "safety": 1,
+    "access": 0.8222499999999999
+   },
+   "contrib": {
+    "science": 0.044444444444444446,
+    "safety": 0.3333333333333333,
+    "access": 0.2740833333333333
+   },
+   "features": {
+    "units": 2,
+    "unitCodes": [
+     "mNh",
+     "HNhu"
+    ],
+    "minerals": [],
+    "names": 1,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -1867,
+    "absLat": 0.3911,
+    "samples": 877
+   }
+  },
+  {
+   "rank": 26,
+   "id": "ez1037",
+   "name": "Hellas rim (Levy & Holt)",
+   "lat": -42.4301,
+   "lon": 70.5025,
+   "score": 0.6421,
+   "terms": {
+    "science": 0.13333333333333333,
+    "safety": 1,
+    "access": 0.7928316666666666
+   },
+   "contrib": {
+    "science": 0.044444444444444446,
+    "safety": 0.3333333333333333,
+    "access": 0.2642772222222222
+   },
+   "features": {
+    "units": 1,
+    "unitCodes": [
+     "lHb"
+    ],
+    "minerals": [
+     "Plagioclase"
+    ],
+    "names": 1,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -6479,
+    "absLat": 42.4301,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 27,
+   "id": "ez1051",
+   "name": "Hypanis Valles (Xanthe Terra)",
+   "lat": 9.4627,
+   "lon": -46.4157,
+   "score": 0.6407,
+   "terms": {
+    "science": 0.09999999999999999,
+    "safety": 1,
+    "access": 0.8221666666666667
+   },
+   "contrib": {
+    "science": 0.03333333333333333,
+    "safety": 0.3333333333333333,
+    "access": 0.27405555555555555
+   },
+   "features": {
+    "units": 1,
+    "unitCodes": [
+     "mNh"
+    ],
+    "minerals": [],
+    "names": 2,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -1866,
+    "absLat": 9.4627,
+    "samples": 877
+   }
+  },
+  {
+   "rank": 28,
+   "id": "ez1032",
+   "name": "Huygens Crater",
+   "lat": -13.5,
+   "lon": 55.5,
+   "score": 0.6371,
+   "terms": {
+    "science": 0.35555555555555557,
+    "safety": 1,
+    "access": 0.55575
+   },
+   "contrib": {
+    "science": 0.11851851851851852,
+    "safety": 0.3333333333333333,
+    "access": 0.18525
+   },
+   "features": {
+    "units": 2,
+    "unitCodes": [
+     "lNh",
+     "mNh"
+    ],
+    "minerals": [
+     "Plagioclase",
+     "Carbonate",
+     "Amphibole",
+     "Clinopyroxene"
+    ],
+    "names": 1,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": 1331,
+    "absLat": 13.5,
+    "samples": 875
+   }
+  },
+  {
+   "rank": 29,
+   "id": "ez1028",
+   "name": "Hale Crater",
+   "lat": -35.6879,
+   "lon": -36.3616,
+   "score": 0.633,
+   "terms": {
+    "science": 0.3222222222222222,
+    "safety": 1,
+    "access": 0.576785
+   },
+   "contrib": {
+    "science": 0.1074074074074074,
+    "safety": 0.3333333333333333,
+    "access": 0.19226166666666666
+   },
+   "features": {
+    "units": 2,
+    "unitCodes": [
+     "mNhm",
+     "mNh"
+    ],
+    "minerals": [
+     "Plagioclase",
+     "Carbonate",
+     "Clinopyroxene"
+    ],
+    "names": 2,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -59,
+    "absLat": 35.6879,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 30,
+   "id": "ez1015",
+   "name": "Newton Crater",
+   "lat": -40.6,
+   "lon": -160,
+   "score": 0.6322,
+   "terms": {
+    "science": 0.37777777777777777,
+    "safety": 1,
+    "access": 0.5189166666666667
+   },
+   "contrib": {
+    "science": 0.1259259259259259,
+    "safety": 0.3333333333333333,
+    "access": 0.17297222222222222
+   },
+   "features": {
+    "units": 3,
+    "unitCodes": [
+     "eNh",
+     "lNh",
+     "mNh"
+    ],
+    "minerals": [
+     "Hematite",
+     "Carbonate",
+     "Clinopyroxene"
+    ],
+    "names": 2,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -347,
+    "absLat": 40.6,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 31,
+   "id": "ez1023",
+   "name": "Equatorial opportunities (Mitchell & Christensen)",
+   "lat": -18.83,
+   "lon": -49.21,
+   "score": 0.6316,
+   "terms": {
+    "science": 0.3333333333333333,
+    "safety": 1,
+    "access": 0.5614166666666667
+   },
+   "contrib": {
+    "science": 0.1111111111111111,
+    "safety": 0.3333333333333333,
+    "access": 0.18713888888888888
+   },
+   "features": {
+    "units": 3,
+    "unitCodes": [
+     "mNh",
+     "lNh",
+     "Nhu"
+    ],
+    "minerals": [
+     "Plagioclase",
+     "Carbonate",
+     "Clinopyroxene"
+    ],
+    "names": 0,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": 1263,
+    "absLat": 18.83,
+    "samples": 875
+   }
+  },
+  {
+   "rank": 32,
+   "id": "ez1008",
+   "name": "Gusev Crater",
+   "lat": -14.5308,
+   "lon": 175.5244,
+   "score": 0.6259,
+   "terms": {
+    "science": 0.3444444444444444,
+    "safety": 0.7291428571428571,
+    "access": 0.80425
+   },
+   "contrib": {
+    "science": 0.1148148148148148,
+    "safety": 0.24304761904761904,
+    "access": 0.26808333333333334
+   },
+   "features": {
+    "units": 3,
+    "unitCodes": [
+     "mNh",
+     "eNh",
+     "eHv"
+    ],
+    "minerals": [],
+    "names": 8,
+    "steepShare": 0,
+    "dustShare": 0.27085714285714285,
+    "elev_m": -1651,
+    "absLat": 14.5308,
+    "samples": 875
+   }
+  },
+  {
+   "rank": 33,
+   "id": "ez1018",
+   "name": "Mid-latitude ice-rich ground (Arcadia)",
+   "lat": 46.16,
+   "lon": -171.2,
+   "score": 0.5954,
+   "terms": {
+    "science": 0.05555555555555555,
+    "safety": 1,
+    "access": 0.7306666666666667
+   },
+   "contrib": {
+    "science": 0.018518518518518517,
+    "safety": 0.3333333333333333,
+    "access": 0.24355555555555555
+   },
+   "features": {
+    "units": 1,
+    "unitCodes": [
+     "Av"
+    ],
+    "minerals": [],
+    "names": 0,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": -4030,
+    "absLat": 46.16,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 34,
+   "id": "ez1046",
+   "name": "Gusev - Apollinaris Sulci",
+   "lat": -13,
+   "lon": 175,
+   "score": 0.5923,
+   "terms": {
+    "science": 0.4222222222222222,
+    "safety": 0.5359179019384265,
+    "access": 0.8188333333333333
+   },
+   "contrib": {
+    "science": 0.14074074074074075,
+    "safety": 0.17863930064614217,
+    "access": 0.27294444444444443
+   },
+   "features": {
+    "units": 6,
+    "unitCodes": [
+     "eHv",
+     "eNh",
+     "HNt",
+     "mNh",
+     "AHtu",
+     "Hve"
+    ],
+    "minerals": [],
+    "names": 4,
+    "steepShare": 0,
+    "dustShare": 0.4640820980615735,
+    "elev_m": -1826,
+    "absLat": 13,
+    "samples": 877
+   }
+  },
+  {
+   "rank": 35,
+   "id": "ez1041",
+   "name": "Columbus Crater",
+   "lat": -29,
+   "lon": -166,
+   "score": 0.5815,
+   "terms": {
+    "science": 0.24444444444444444,
+    "safety": 1,
+    "access": 0.5
+   },
+   "contrib": {
+    "science": 0.08148148148148147,
+    "safety": 0.3333333333333333,
+    "access": 0.16666666666666666
+   },
+   "features": {
+    "units": 2,
+    "unitCodes": [
+     "eNh",
+     "mNh"
+    ],
+    "minerals": [
+     "Carbonate",
+     "Clinopyroxene"
+    ],
+    "names": 1,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": 2391,
+    "absLat": 29,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 36,
+   "id": "ez1021",
+   "name": "Western Noachis Terra chlorides",
+   "lat": -37.4214,
+   "lon": -9.4215,
+   "score": 0.5604,
+   "terms": {
+    "science": 0.24444444444444444,
+    "safety": 1,
+    "access": 0.43681000000000003
+   },
+   "contrib": {
+    "science": 0.08148148148148147,
+    "safety": 0.3333333333333333,
+    "access": 0.14560333333333333
+   },
+   "features": {
+    "units": 3,
+    "unitCodes": [
+     "mNh",
+     "lNh",
+     "eNh"
+    ],
+    "minerals": [
+     "Clinopyroxene"
+    ],
+    "names": 1,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": 1274,
+    "absLat": 37.4214,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 37,
+   "id": "ez1038",
+   "name": "Eastern rim of Hellas",
+   "lat": -40,
+   "lon": 104,
+   "score": 0.5572,
+   "terms": {
+    "science": 0.16666666666666666,
+    "safety": 0.9873997709049256,
+    "access": 0.5176666666666666
+   },
+   "contrib": {
+    "science": 0.05555555555555555,
+    "safety": 0.32913325696830853,
+    "access": 0.17255555555555555
+   },
+   "features": {
+    "units": 3,
+    "unitCodes": [
+     "HNhu",
+     "ANa",
+     "eNhm"
+    ],
+    "minerals": [],
+    "names": 0,
+    "steepShare": 0.012600229095074456,
+    "dustShare": 0,
+    "elev_m": -212,
+    "absLat": 40,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 38,
+   "id": "ez1053",
+   "name": "Protonilus Mensae",
+   "lat": 42.187,
+   "lon": 48.062,
+   "score": 0.5482,
+   "terms": {
+    "science": 0.2222222222222222,
+    "safety": 0.8167239404352806,
+    "access": 0.6057166666666667
+   },
+   "contrib": {
+    "science": 0.07407407407407407,
+    "safety": 0.2722413134784269,
+    "access": 0.20190555555555556
+   },
+   "features": {
+    "units": 4,
+    "unitCodes": [
+     "HNt",
+     "mNh",
+     "AHi",
+     "ANa"
+    ],
+    "minerals": [],
+    "names": 0,
+    "steepShare": 0,
+    "dustShare": 0.18327605956471935,
+    "elev_m": -1706,
+    "absLat": 42.187,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 39,
+   "id": "ez1033",
+   "name": "Deuteronilus Mensae dichotomy boundary",
+   "lat": 45.1095,
+   "lon": 23.9184,
+   "score": 0.534,
+   "terms": {
+    "science": 0.13333333333333333,
+    "safety": 0.7777777777777778,
+    "access": 0.690925
+   },
+   "contrib": {
+    "science": 0.044444444444444446,
+    "safety": 0.25925925925925924,
+    "access": 0.23030833333333334
+   },
+   "features": {
+    "units": 2,
+    "unitCodes": [
+     "eHt",
+     "ANa"
+    ],
+    "minerals": [],
+    "names": 1,
+    "steepShare": 0,
+    "dustShare": 0.2222222222222222,
+    "elev_m": -3313,
+    "absLat": 45.1095,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 40,
+   "id": "ez1029",
+   "name": "Southern highlands site (Westenberg & Zucker)",
+   "lat": -49.2,
+   "lon": -169.2,
+   "score": 0.5195,
+   "terms": {
+    "science": 0.24444444444444444,
+    "safety": 1,
+    "access": 0.3139166666666666
+   },
+   "contrib": {
+    "science": 0.08148148148148147,
+    "safety": 0.3333333333333333,
+    "access": 0.10463888888888888
+   },
+   "features": {
+    "units": 4,
+    "unitCodes": [
+     "AHi",
+     "eNh",
+     "lNh",
+     "Nhe"
+    ],
+    "minerals": [],
+    "names": 1,
+    "steepShare": 0,
+    "dustShare": 0,
+    "elev_m": 393,
+    "absLat": 49.2,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 41,
+   "id": "ez1017",
+   "name": "Cerberus (Fossae and plains)",
+   "lat": 10,
+   "lon": 162,
+   "score": 0.495,
+   "terms": {
+    "science": 0.1111111111111111,
+    "safety": 0.48688711516533634,
+    "access": 0.887
+   },
+   "contrib": {
+    "science": 0.037037037037037035,
+    "safety": 0.16229570505511212,
+    "access": 0.2956666666666667
+   },
+   "features": {
+    "units": 2,
+    "unitCodes": [
+     "lAv",
+     "HNt"
+    ],
+    "minerals": [],
+    "names": 0,
+    "steepShare": 0,
+    "dustShare": 0.5131128848346637,
+    "elev_m": -2644,
+    "absLat": 10,
+    "samples": 877
+   }
+  },
+  {
+   "rank": 42,
+   "id": "ez1027",
+   "name": "Ismenius Cavus",
+   "lat": 33.8981,
+   "lon": 17.075,
+   "score": 0.4288,
+   "terms": {
+    "science": 0.13333333333333333,
+    "safety": 0.3894616265750286,
+    "access": 0.7635316666666667
+   },
+   "contrib": {
+    "science": 0.044444444444444446,
+    "safety": 0.12982054219167619,
+    "access": 0.2545105555555556
+   },
+   "features": {
+    "units": 1,
+    "unitCodes": [
+     "mNh"
+    ],
+    "minerals": [
+     "K-feldspar"
+    ],
+    "names": 1,
+    "steepShare": 0,
+    "dustShare": 0.6105383734249714,
+    "elev_m": -1942,
+    "absLat": 33.8981,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 43,
+   "id": "ez1011",
+   "name": "Erebus Montes (mid-latitude ice)",
+   "lat": 39,
+   "lon": -167.9,
+   "score": 0.4248,
+   "terms": {
+    "science": 0.16666666666666666,
+    "safety": 0.26002290950744555,
+    "access": 0.8476666666666666
+   },
+   "contrib": {
+    "science": 0.05555555555555555,
+    "safety": 0.08667430316914852,
+    "access": 0.2825555555555555
+   },
+   "features": {
+    "units": 3,
+    "unitCodes": [
+     "lAv",
+     "Av",
+     "HNt"
+    ],
+    "minerals": [],
+    "names": 0,
+    "steepShare": 0,
+    "dustShare": 0.7399770904925544,
+    "elev_m": -3972,
+    "absLat": 39,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 44,
+   "id": "ez1043",
+   "name": "Apollinaris Sulci",
+   "lat": -11.0642,
+   "lon": 177.4663,
+   "score": 0.4016,
+   "terms": {
+    "science": 0.41111111111111115,
+    "safety": 0,
+    "access": 0.79375
+   },
+   "contrib": {
+    "science": 0.13703703703703704,
+    "safety": 0,
+    "access": 0.26458333333333334
+   },
+   "features": {
+    "units": 6,
+    "unitCodes": [
+     "mNh",
+     "AHtu",
+     "eNh",
+     "HNt",
+     "Hve",
+     "Htu"
+    ],
+    "minerals": [
+     "K-feldspar"
+    ],
+    "names": 1,
+    "steepShare": 0,
+    "dustShare": 1,
+    "elev_m": -1525,
+    "absLat": 11.0642,
+    "samples": 877
+   }
+  },
+  {
+   "rank": 45,
+   "id": "ez1016",
+   "name": "Zephyria Planum hills",
+   "lat": -1.0807,
+   "lon": 153.7297,
+   "score": 0.3233,
+   "terms": {
+    "science": 0.13333333333333333,
+    "safety": 0,
+    "access": 0.8366666666666667
+   },
+   "contrib": {
+    "science": 0.044444444444444446,
+    "safety": 0,
+    "access": 0.2788888888888889
+   },
+   "features": {
+    "units": 2,
+    "unitCodes": [
+     "AHtu",
+     "AHi"
+    ],
+    "minerals": [],
+    "names": 1,
+    "steepShare": 0,
+    "dustShare": 1,
+    "elev_m": -2040,
+    "absLat": 1.0807,
+    "samples": 877
+   }
+  },
+  {
+   "rank": 46,
+   "id": "ez1056",
+   "name": "Tempe Terra",
+   "lat": 42.266,
+   "lon": -89.18,
+   "score": 0.2696,
+   "terms": {
+    "science": 0.37777777777777777,
+    "safety": 0.01718213058419249,
+    "access": 0.4138166666666667
+   },
+   "contrib": {
+    "science": 0.1259259259259259,
+    "safety": 0.005727376861397497,
+    "access": 0.13793888888888892
+   },
+   "features": {
+    "units": 7,
+    "unitCodes": [
+     "lHvf",
+     "HNt",
+     "ANa",
+     "AHv",
+     "eHh",
+     "mNh",
+     "lHv"
+    ],
+    "minerals": [],
+    "names": 2,
+    "steepShare": 0,
+    "dustShare": 0.9828178694158075,
+    "elev_m": 581,
+    "absLat": 42.266,
+    "samples": 873
+   }
+  },
+  {
+   "rank": 47,
+   "id": "ez1050",
+   "name": "Noctis Landing",
+   "lat": -6.3625,
+   "lon": -101.1889,
+   "score": 0.1926,
+   "terms": {
+    "science": 0.07777777777777778,
+    "safety": 0,
+    "access": 0.5
+   },
+   "contrib": {
+    "science": 0.025925925925925925,
+    "safety": 0,
+    "access": 0.16666666666666666
+   },
+   "features": {
+    "units": 1,
+    "unitCodes": [
+     "lHv"
+    ],
+    "minerals": [],
+    "names": 1,
+    "steepShare": 0.05131128848346636,
+    "dustShare": 1,
+    "elev_m": 7113,
+    "absLat": 6.3625,
+    "samples": 877
+   }
+  }
+ ]
+}

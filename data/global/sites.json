@@ -1,0 +1,57 @@
+[
+  {
+    "id": "jezero",
+    "name": "Jezero \u2014 Three Forks",
+    "mission": "m2020",
+    "base": "/",
+    "lat": 18.45341952,
+    "lon": 77.40843791,
+    "elev_m": -2545.121826171875,
+    "splat": true,
+    "camera": "Mastcam-Z (colour)"
+  },
+  {
+    "id": "gale-yellowknife",
+    "name": "Gale \u2014 Yellowknife Bay",
+    "mission": "msl",
+    "base": "/sites/gale-yellowknife/",
+    "lat": -4.58948488,
+    "lon": 137.4491296,
+    "elev_m": -4520.4560546875,
+    "splat": true,
+    "camera": "Navcam (greyscale)"
+  },
+  {
+    "id": "gale-gediz",
+    "name": "Gale \u2014 Gediz Vallis channel",
+    "mission": "msl",
+    "base": "/sites/gale-gediz/",
+    "lat": -4.77647482,
+    "lon": 137.4045524,
+    "elev_m": -3764.149169921875,
+    "splat": true,
+    "camera": "Navcam (greyscale)"
+  },
+  {
+    "id": "spirit-homeplate",
+    "name": "Gusev \u2014 Home Plate (Spirit)",
+    "mission": "mer",
+    "base": "/sites/spirit-homeplate/",
+    "lat": -14.601067000969582,
+    "lon": 175.52685547234339,
+    "elev_m": -1922.7215576171875,
+    "splat": true,
+    "camera": "Navcam (greyscale)"
+  },
+  {
+    "id": "opportunity-capeyork",
+    "name": "Endeavour \u2014 Cape York (Opportunity)",
+    "mission": "mer",
+    "base": "/sites/opportunity-capeyork/",
+    "lat": -2.227566723436106,
+    "lon": 354.64455593963555,
+    "elev_m": -1486.9169921875,
+    "splat": true,
+    "camera": "Navcam (greyscale)"
+  }
+]

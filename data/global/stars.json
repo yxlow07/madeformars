@@ -1,0 +1,24 @@
+{
+  "file": "stars.f32",
+  "count": 9096,
+  "layout": "float32 x5 per star: x, y, z, Vmag, B-V (brightest first)",
+  "frame": "Mars equatorial: z = Mars north pole, x = ascending node of Mars's equator on the ICRF equator (J2000)",
+  "pole_icrf_deg": {
+    "alpha0": 317.68143,
+    "delta0": 52.8865
+  },
+  "pole_check_z": 1.0,
+  "prime_meridian": {
+    "W0_deg": 176.63,
+    "Wdot_deg_per_day": 350.89198226,
+    "epoch": "J2000.0 = 2000-01-01T12:00:00 TT",
+    "note": "viewer rotates the sky by W(t) about z so the planet faces the right stars for the current date"
+  },
+  "vmag_range": [
+    -1.4600000381469727,
+    7.960000038146973
+  ],
+  "source": "https://heasarc.gsfc.nasa.gov/FTP/heasarc/dbase/tdat_files/heasarc_bsc5p.tdat.gz",
+  "catalogue": "Yale Bright Star Catalogue, 5th revised ed. (Hoffleit & Warren 1991), NASA HEASARC table bsc5p",
+  "citation": "Hoffleit & Warren 1991, The Bright Star Catalogue (5th rev. ed.), NASA HEASARC; Mars pole/W: Archinal et al. 2011, Celest. Mech. Dyn. Astr. 109"
+}

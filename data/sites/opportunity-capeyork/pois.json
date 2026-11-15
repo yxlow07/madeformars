@@ -1,0 +1,249 @@
+{
+  "site": "Endeavour \u2014 Cape York (Opportunity)",
+  "habitat": {
+    "id": "habitat",
+    "name": "Habitat (start)",
+    "type": "habitat",
+    "lat": -2.227566723436106,
+    "lon": 354.64455593963555,
+    "x": 0.001834379144776396,
+    "z": -0.29585049478919245,
+    "description": "Walk start and shelter, placed at Opportunity's stop 163_43 (sol 2816), where the 3D scan was captured from 83 Navcam images.",
+    "facts": [
+      {
+        "text": "Opportunity stop site 163 / drive 43, sol 2816",
+        "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+      }
+    ]
+  },
+  "pois": [
+    {
+      "id": "stop-161-223",
+      "name": "Opportunity stop, sol 2749",
+      "type": "rover stop",
+      "lat": -2.232073522140477,
+      "lon": 354.6428682682683,
+      "x": -99.95878085354717,
+      "z": 266.84327950523584,
+      "description": "42 full-frame Navcam images taken at this Opportunity stop (sols 2749\u20132750).",
+      "tags": [
+        "Opportunity",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "42 Navcam images at site 161 / drive 223 (sols 2749\u20132750)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Opportunity corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    },
+    {
+      "id": "stop-166-0",
+      "name": "Opportunity stop, sol 3024",
+      "type": "rover stop",
+      "lat": -2.226434929048229,
+      "lon": 354.64650124535177,
+      "x": 115.22210770318006,
+      "z": -67.38262049478362,
+      "description": "34 full-frame Navcam images taken at this Opportunity stop (sols 3024\u20133036).",
+      "tags": [
+        "Opportunity",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "34 Navcam images at site 166 / drive 0 (sols 3024\u20133036)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Opportunity corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    },
+    {
+      "id": "stop-161-0",
+      "name": "Opportunity stop, sol 2746",
+      "type": "rover stop",
+      "lat": -2.232635956052297,
+      "lon": 354.642182744649,
+      "x": -140.5622798939459,
+      "z": 300.1813795052294,
+      "description": "30 full-frame Navcam images taken at this Opportunity stop (sols 2746\u20132747).",
+      "tags": [
+        "Opportunity",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "30 Navcam images at site 161 / drive 0 (sols 2746\u20132747)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Opportunity corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    },
+    {
+      "id": "stop-161-680",
+      "name": "Opportunity stop, sol 2754",
+      "type": "rover stop",
+      "lat": -2.2304749596178635,
+      "lon": 354.6432085372281,
+      "x": -79.80468259118082,
+      "z": 172.0889695052174,
+      "description": "28 full-frame Navcam images taken at this Opportunity stop (sols 2754\u20132755).",
+      "tags": [
+        "Opportunity",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "28 Navcam images at site 161 / drive 680 (sols 2754\u20132755)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Opportunity corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    },
+    {
+      "id": "stop-168-1498",
+      "name": "Opportunity stop, sol 3133",
+      "type": "rover stop",
+      "lat": -2.232009331344758,
+      "lon": 354.6442964811945,
+      "x": -15.3658645131974,
+      "z": 263.0383895052073,
+      "description": "27 full-frame Navcam images taken at this Opportunity stop (sols 3133\u20133133).",
+      "tags": [
+        "Opportunity",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "27 Navcam images at site 168 / drive 1498 (sols 3133\u20133133)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Opportunity corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    },
+    {
+      "id": "stop-168-199",
+      "name": "Opportunity stop, sol 3101",
+      "type": "rover stop",
+      "lat": -2.23142283269605,
+      "lon": 354.64452482321803,
+      "x": -1.841188082620813,
+      "z": 228.27385950522148,
+      "description": "24 full-frame Navcam images taken at this Opportunity stop (sols 3101\u20133101).",
+      "tags": [
+        "Opportunity",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "24 Navcam images at site 168 / drive 199 (sols 3101\u20133101)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Opportunity corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    },
+    {
+      "id": "stop-168-416",
+      "name": "Opportunity stop, sol 3105",
+      "type": "rover stop",
+      "lat": -2.2310071990272267,
+      "lon": 354.6439706034195,
+      "x": -34.667574255632545,
+      "z": 203.63729950520792,
+      "description": "24 full-frame Navcam images taken at this Opportunity stop (sols 3105\u20133105).",
+      "tags": [
+        "Opportunity",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "24 Navcam images at site 168 / drive 416 (sols 3105\u20133105)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Opportunity corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    },
+    {
+      "id": "stop-168-748",
+      "name": "Opportunity stop, sol 3114",
+      "type": "rover stop",
+      "lat": -2.2315231711245618,
+      "lon": 354.6436847803832,
+      "x": -51.59684562620166,
+      "z": 234.2213895052264,
+      "description": "24 full-frame Navcam images taken at this Opportunity stop (sols 3114\u20133114).",
+      "tags": [
+        "Opportunity",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "24 Navcam images at site 168 / drive 748 (sols 3114\u20133114)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Opportunity corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    },
+    {
+      "id": "stop-163-565",
+      "name": "Opportunity stop, sol 2969",
+      "type": "rover stop",
+      "lat": -2.225968489215463,
+      "lon": 354.6450885167827,
+      "x": 31.54632836354734,
+      "z": -95.0307004947972,
+      "description": "22 full-frame Navcam images taken at this Opportunity stop (sols 2969\u20132970).",
+      "tags": [
+        "Opportunity",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "22 Navcam images at site 163 / drive 565 (sols 2969\u20132970)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Opportunity corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    }
+  ],
+  "shelter_poi": "stop-161-223",
+  "note": "Pins from Opportunity's corrected traverse and Navcam imaging counts; no images downloaded for these stops.",
+  "skipped": []
+}

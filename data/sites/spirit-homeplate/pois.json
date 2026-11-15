@@ -1,0 +1,249 @@
+{
+  "site": "Gusev \u2014 Home Plate (Spirit)",
+  "habitat": {
+    "id": "habitat",
+    "name": "Habitat (start)",
+    "type": "habitat",
+    "lat": -14.601067000969582,
+    "lon": 175.52685547234339,
+    "x": -0.4549039892052268,
+    "z": -0.5052191655850038,
+    "description": "Walk start and shelter, placed at Spirit's stop 128_0 (sol 855), where the 3D scan was captured from 121 Navcam images.",
+    "facts": [
+      {
+        "text": "Spirit stop site 128 / drive 0, sol 855",
+        "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+      }
+    ]
+  },
+  "pois": [
+    {
+      "id": "stop-134-0",
+      "name": "Spirit stop, sol 1466",
+      "type": "rover stop",
+      "lat": -14.599723088586588,
+      "lon": 175.52637145469,
+      "x": -27.79164437280405,
+      "z": -80.1509111908963,
+      "description": "110 full-frame Navcam images taken at this Spirit stop (sols 1466\u20131705).",
+      "tags": [
+        "Spirit",
+        "Navcam"
+      ],
+      "science_weight": 4,
+      "facts": [
+        {
+          "text": "110 Navcam images at site 134 / drive 0 (sols 1466\u20131705)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Spirit corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    },
+    {
+      "id": "stop-130-194",
+      "name": "Spirit stop, sol 1250",
+      "type": "rover stop",
+      "lat": -14.600427942457559,
+      "lon": 175.5270489781811,
+      "x": 10.474075174731196,
+      "z": -38.37841542356182,
+      "description": "78 full-frame Navcam images taken at this Spirit stop (sols 1250\u20131290).",
+      "tags": [
+        "Spirit",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "78 Navcam images at site 130 / drive 194 (sols 1250\u20131290)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Spirit corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    },
+    {
+      "id": "stop-132-860",
+      "name": "Spirit stop, sol 1392",
+      "type": "rover stop",
+      "lat": -14.600158012779827,
+      "lon": 175.52586415560194,
+      "x": -56.44329244851279,
+      "z": -54.37554161506705,
+      "description": "40 full-frame Navcam images taken at this Spirit stop (sols 1392\u20131394).",
+      "tags": [
+        "Spirit",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "40 Navcam images at site 132 / drive 860 (sols 1392\u20131394)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Spirit corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    },
+    {
+      "id": "stop-131-126",
+      "name": "Spirit stop, sol 1323",
+      "type": "rover stop",
+      "lat": -14.600874169956056,
+      "lon": 175.52633231488673,
+      "x": -30.00221382849698,
+      "z": -11.933166188420728,
+      "description": "36 full-frame Navcam images taken at this Spirit stop (sols 1323\u20131331).",
+      "tags": [
+        "Spirit",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "36 Navcam images at site 131 / drive 126 (sols 1323\u20131331)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Spirit corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    },
+    {
+      "id": "stop-137-195",
+      "name": "Spirit stop, sol 1894",
+      "type": "rover stop",
+      "lat": -14.60036248451071,
+      "lon": 175.5253733897066,
+      "x": -84.1611654987198,
+      "z": -42.25771852512844,
+      "description": "30 full-frame Navcam images taken at this Spirit stop (sols 1894\u20131897).",
+      "tags": [
+        "Spirit",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "30 Navcam images at site 137 / drive 195 (sols 1894\u20131897)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Spirit corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    },
+    {
+      "id": "stop-124-55",
+      "name": "Spirit stop, sol 746",
+      "type": "rover stop",
+      "lat": -14.599661342172807,
+      "lon": 175.52581911108695,
+      "x": -58.987352987308,
+      "z": -83.81025380722713,
+      "description": "26 full-frame Navcam images taken at this Spirit stop (sols 746\u2013748).",
+      "tags": [
+        "Spirit",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "26 Navcam images at site 124 / drive 55 (sols 746\u2013748)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Spirit corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    },
+    {
+      "id": "stop-126-362",
+      "name": "Spirit stop, sol 799",
+      "type": "rover stop",
+      "lat": -14.601214281349996,
+      "lon": 175.5272225767051,
+      "x": 20.278712976268917,
+      "z": 8.223212812794372,
+      "description": "24 full-frame Navcam images taken at this Spirit stop (sols 799\u2013801).",
+      "tags": [
+        "Spirit",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "24 Navcam images at site 126 / drive 362 (sols 799\u2013801)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Spirit corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    },
+    {
+      "id": "stop-122-0",
+      "name": "Spirit stop, sol 714",
+      "type": "rover stop",
+      "lat": -14.59398219045942,
+      "lon": 175.52716589147278,
+      "x": 17.07719859141886,
+      "z": -420.3797906705877,
+      "description": "22 full-frame Navcam images taken at this Spirit stop (sols 714\u2013715).",
+      "tags": [
+        "Spirit",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "22 Navcam images at site 122 / drive 0 (sols 714\u2013715)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Spirit corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    },
+    {
+      "id": "stop-122-267",
+      "name": "Spirit stop, sol 719",
+      "type": "rover stop",
+      "lat": -14.59445304904101,
+      "lon": 175.5269475858459,
+      "x": 4.747556884200488,
+      "z": -392.4748036704259,
+      "description": "22 full-frame Navcam images taken at this Spirit stop (sols 719\u2013721).",
+      "tags": [
+        "Spirit",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "22 Navcam images at site 122 / drive 267 (sols 719\u2013721)",
+          "source": "https://planetarydata.jpl.nasa.gov/img/data/mer/"
+        },
+        {
+          "text": "Position from the Spirit corrected traverse (Analyst's Notebook)",
+          "source": "https://an.rsl.wustl.edu/mera/AN/pages/mer/mer_traverse.htm"
+        }
+      ]
+    }
+  ],
+  "shelter_poi": "stop-122-0",
+  "note": "Pins from Spirit's corrected traverse and Navcam imaging counts; no images downloaded for these stops.",
+  "skipped": []
+}

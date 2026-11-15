@@ -1,0 +1,204 @@
+[
+  {
+    "name": "Mars 2",
+    "lat": -45.0419,
+    "lon": -158.0943,
+    "attrs": {
+      "OBJECTID": 1,
+      "ID": 1,
+      "NAME": "Mars 2",
+      "X_COORD": -158.0943,
+      "Y_COORD": -45.0419,
+      "FULL_NAME": "Mars 2 Landing Site",
+      "NSSDC_ID": "1971-045A",
+      "WEB_LINK": "http://nssdc.gsfc.nasa.gov/database/MasterCatalog?sc=1971-045A",
+      "COUNTRY": "Russian",
+      "YEAR": 1971
+    },
+    "agency": "USSR",
+    "year": 1971,
+    "source": "USGS SIM 3292 Global_Landing_sites shapefile (Tanaka et al. 2014)"
+  },
+  {
+    "name": "Mars 6",
+    "lat": -23.9203,
+    "lon": -19.4528,
+    "attrs": {
+      "OBJECTID": 2,
+      "ID": 2,
+      "NAME": "Mars 6",
+      "X_COORD": -19.4528,
+      "Y_COORD": -23.9203,
+      "FULL_NAME": "Mars 6 Landing Site",
+      "NSSDC_ID": "1973-052A",
+      "WEB_LINK": "http://nssdc.gsfc.nasa.gov/database/MasterCatalog?sc=1973-052A",
+      "COUNTRY": "Russian",
+      "YEAR": 1973
+    },
+    "agency": "USSR",
+    "year": 1973,
+    "source": "USGS SIM 3292 Global_Landing_sites shapefile (Tanaka et al. 2014)"
+  },
+  {
+    "name": "Viking 1",
+    "lat": 22.4571,
+    "lon": -47.9507,
+    "attrs": {
+      "OBJECTID": 3,
+      "ID": 3,
+      "NAME": "Viking 1",
+      "X_COORD": -47.9507,
+      "Y_COORD": 22.45709,
+      "FULL_NAME": "Viking 1 Landing Site",
+      "NSSDC_ID": "1975-075C",
+      "WEB_LINK": "http://nssdc.gsfc.nasa.gov/database/MasterCatalog?sc=1975-075C",
+      "COUNTRY": "American",
+      "YEAR": 1975
+    },
+    "agency": "NASA",
+    "year": 1975,
+    "source": "USGS SIM 3292 Global_Landing_sites shapefile (Tanaka et al. 2014)"
+  },
+  {
+    "name": "Viking 2",
+    "lat": 47.9325,
+    "lon": 133.739,
+    "attrs": {
+      "OBJECTID": 4,
+      "ID": 4,
+      "NAME": "Viking 2",
+      "X_COORD": 133.739,
+      "Y_COORD": 47.93254,
+      "FULL_NAME": "Viking 2 Landing Site",
+      "NSSDC_ID": "1975-083C",
+      "WEB_LINK": "http://nssdc.gsfc.nasa.gov/database/MasterCatalog?sc=1975-083C",
+      "COUNTRY": "American",
+      "YEAR": 1975
+    },
+    "agency": "NASA",
+    "year": 1975,
+    "source": "USGS SIM 3292 Global_Landing_sites shapefile (Tanaka et al. 2014)"
+  },
+  {
+    "name": "Mars Pathfinder",
+    "lat": 19.2608,
+    "lon": -33.2528,
+    "attrs": {
+      "OBJECTID": 5,
+      "ID": 5,
+      "NAME": "Pathfinder",
+      "X_COORD": -33.2528,
+      "Y_COORD": 19.26077,
+      "FULL_NAME": "Mars Pathfinder Landing Site",
+      "NSSDC_ID": "1996-068A",
+      "WEB_LINK": "http://nssdc.gsfc.nasa.gov/database/MasterCatalog?sc=1996-068A",
+      "COUNTRY": "American",
+      "YEAR": 1996
+    },
+    "agency": "NASA",
+    "year": 1996,
+    "source": "USGS SIM 3292 Global_Landing_sites shapefile (Tanaka et al. 2014)"
+  },
+  {
+    "name": "MER Spirit",
+    "lat": -14.5692,
+    "lon": 175.4729,
+    "attrs": {
+      "OBJECTID": 6,
+      "ID": 6,
+      "NAME": "MER A",
+      "X_COORD": 175.4729,
+      "Y_COORD": -14.5692,
+      "FULL_NAME": "MER Spirit Landing Site",
+      "NSSDC_ID": "2003-027A",
+      "WEB_LINK": "http://nssdc.gsfc.nasa.gov/database/MasterCatalog?sc=2003-027A",
+      "COUNTRY": "American",
+      "YEAR": 2003
+    },
+    "agency": "NASA",
+    "year": 2003,
+    "source": "USGS SIM 3292 Global_Landing_sites shapefile (Tanaka et al. 2014)"
+  },
+  {
+    "name": "MER Opportunity",
+    "lat": -1.9462,
+    "lon": -5.5266,
+    "attrs": {
+      "OBJECTID": 7,
+      "ID": 7,
+      "NAME": "MER B",
+      "X_COORD": -5.5266,
+      "Y_COORD": -1.9462,
+      "FULL_NAME": "MER Opportunity Landing Site",
+      "NSSDC_ID": "2003-032A",
+      "WEB_LINK": "http://nssdc.gsfc.nasa.gov/database/MasterCatalog?sc=2003-032A",
+      "COUNTRY": "American",
+      "YEAR": 2003
+    },
+    "agency": "NASA",
+    "year": 2003,
+    "source": "USGS SIM 3292 Global_Landing_sites shapefile (Tanaka et al. 2014)"
+  },
+  {
+    "name": "Phoenix",
+    "lat": 68.2188,
+    "lon": -125.7492,
+    "attrs": {
+      "OBJECTID": 8,
+      "ID": 8,
+      "NAME": "PHX",
+      "X_COORD": -125.74922,
+      "Y_COORD": 68.21883,
+      "FULL_NAME": "Phoenix Landing Site",
+      "NSSDC_ID": "n/a",
+      "WEB_LINK": "http://www.nasa.gov/mission_pages/phoenix/main",
+      "COUNTRY": "American",
+      "YEAR": 2008
+    },
+    "agency": "NASA",
+    "year": 2008,
+    "source": "USGS SIM 3292 Global_Landing_sites shapefile (Tanaka et al. 2014)"
+  },
+  {
+    "name": "MSL Curiosity (prelim)",
+    "lat": -4.59,
+    "lon": 137.44,
+    "attrs": {
+      "OBJECTID": 9,
+      "ID": 0,
+      "NAME": "MSL",
+      "X_COORD": 137.44,
+      "Y_COORD": -4.59,
+      "FULL_NAME": "MSL Curiosity Landing Site (prelim)",
+      "NSSDC_ID": "n/a",
+      "WEB_LINK": "http://www.nasa.gov/mission_pages/msl/",
+      "COUNTRY": "American",
+      "YEAR": 2012
+    },
+    "agency": "NASA",
+    "year": 2012,
+    "source": "USGS SIM 3292 Global_Landing_sites shapefile (Tanaka et al. 2014)"
+  },
+  {
+    "name": "Perseverance (Mars 2020) \u2014 Octavia E. Butler Landing",
+    "lat": 18.4446,
+    "lon": 77.4509,
+    "attrs": {
+      "landed": "2021-02-18"
+    },
+    "agency": "NASA",
+    "year": 2021,
+    "source": "https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json (first waypoint)"
+  },
+  {
+    "name": "InSight",
+    "lat": 4.5024,
+    "lon": 135.6234,
+    "attrs": {
+      "landed": "2018-11-26"
+    },
+    "agency": "NASA",
+    "year": 2018,
+    "source": "Golombek et al. 2020, Nature Communications 11:1014 (InSight landing location)"
+  }
+]

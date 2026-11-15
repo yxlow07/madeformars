@@ -1,0 +1,224 @@
+{
+  "site": "Gale \u2014 Yellowknife Bay",
+  "habitat": {
+    "id": "habitat",
+    "name": "Habitat (start)",
+    "type": "habitat",
+    "lat": -4.58948488,
+    "lon": 137.4491296,
+    "x": -0.40958677368872676,
+    "z": -0.247139650688041,
+    "description": "Walk start and shelter, placed at Curiosity's stop 6_0 (sol 166), where the 3D scan was captured from 713 Navcam images.",
+    "facts": [
+      {
+        "text": "Curiosity stop site 6 / drive 0, sol 166",
+        "source": "https://mars.nasa.gov/mmgis-maps/MSL/Layers/json/MSL_waypoints.json"
+      }
+    ]
+  },
+  "pois": [
+    {
+      "id": "stop-5-104",
+      "name": "Curiosity stop, sol 59",
+      "type": "rover stop",
+      "lat": -4.58999567,
+      "lon": 137.4483418,
+      "x": -46.956464279338185,
+      "z": 30.02978309727041,
+      "description": "274 full-frame Navcam images taken at this Curiosity stop (sols 59\u201398).",
+      "tags": [
+        "Curiosity",
+        "Navcam"
+      ],
+      "science_weight": 5,
+      "facts": [
+        {
+          "text": "274 Navcam images at site 5 / drive 104 (sols 59\u201398)",
+          "source": "https://mars.nasa.gov/msl/multimedia/raw-images/"
+        },
+        {
+          "text": "Position from the Curiosity waypoint list (MMGIS)",
+          "source": "https://mars.nasa.gov/mmgis-maps/MSL/Layers/json/MSL_waypoints.json"
+        }
+      ]
+    },
+    {
+      "id": "stop-6-804",
+      "name": "Curiosity stop, sol 317",
+      "type": "rover stop",
+      "lat": -4.59050673,
+      "lon": 137.4488133,
+      "x": -19.098057648726066,
+      "z": 60.32271001354093,
+      "description": "64 full-frame Navcam images taken at this Curiosity stop (sols 317\u2013324).",
+      "tags": [
+        "Curiosity",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "64 Navcam images at site 6 / drive 804 (sols 317\u2013324)",
+          "source": "https://mars.nasa.gov/msl/multimedia/raw-images/"
+        },
+        {
+          "text": "Position from the Curiosity waypoint list (MMGIS)",
+          "source": "https://mars.nasa.gov/mmgis-maps/MSL/Layers/json/MSL_waypoints.json"
+        }
+      ]
+    },
+    {
+      "id": "stop-4-2002",
+      "name": "Curiosity stop, sol 43",
+      "type": "rover stop",
+      "lat": -4.59047623,
+      "lon": 137.4453105,
+      "x": -226.05972625310102,
+      "z": 58.51483173907036,
+      "description": "55 full-frame Navcam images taken at this Curiosity stop (sols 43\u201344).",
+      "tags": [
+        "Curiosity",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "55 Navcam images at site 4 / drive 2002 (sols 43\u201344)",
+          "source": "https://mars.nasa.gov/msl/multimedia/raw-images/"
+        },
+        {
+          "text": "Position from the Curiosity waypoint list (MMGIS)",
+          "source": "https://mars.nasa.gov/mmgis-maps/MSL/Layers/json/MSL_waypoints.json"
+        }
+      ]
+    },
+    {
+      "id": "stop-5-1662",
+      "name": "Curiosity stop, sol 130",
+      "type": "rover stop",
+      "lat": -4.58913689,
+      "lon": 137.449388,
+      "x": 14.857883583314377,
+      "z": -20.874141641834285,
+      "description": "36 full-frame Navcam images taken at this Curiosity stop (sols 130\u2013132).",
+      "tags": [
+        "Curiosity",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "36 Navcam images at site 5 / drive 1662 (sols 130\u2013132)",
+          "source": "https://mars.nasa.gov/msl/multimedia/raw-images/"
+        },
+        {
+          "text": "Position from the Curiosity waypoint list (MMGIS)",
+          "source": "https://mars.nasa.gov/mmgis-maps/MSL/Layers/json/MSL_waypoints.json"
+        }
+      ]
+    },
+    {
+      "id": "stop-7-270",
+      "name": "Curiosity stop, sol 329",
+      "type": "rover stop",
+      "lat": -4.59020208,
+      "lon": 137.4475349,
+      "x": -94.63185836412818,
+      "z": 42.26467341306852,
+      "description": "36 full-frame Navcam images taken at this Curiosity stop (sols 329\u2013330).",
+      "tags": [
+        "Curiosity",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "36 Navcam images at site 7 / drive 270 (sols 329\u2013330)",
+          "source": "https://mars.nasa.gov/msl/multimedia/raw-images/"
+        },
+        {
+          "text": "Position from the Curiosity waypoint list (MMGIS)",
+          "source": "https://mars.nasa.gov/mmgis-maps/MSL/Layers/json/MSL_waypoints.json"
+        }
+      ]
+    },
+    {
+      "id": "stop-4-916",
+      "name": "Curiosity stop, sol 40",
+      "type": "rover stop",
+      "lat": -4.59003646,
+      "lon": 137.4441777,
+      "x": -292.99080373336534,
+      "z": 32.44759800925385,
+      "description": "24 full-frame Navcam images taken at this Curiosity stop (sols 40\u201340).",
+      "tags": [
+        "Curiosity",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "24 Navcam images at site 4 / drive 916 (sols 40\u201340)",
+          "source": "https://mars.nasa.gov/msl/multimedia/raw-images/"
+        },
+        {
+          "text": "Position from the Curiosity waypoint list (MMGIS)",
+          "source": "https://mars.nasa.gov/mmgis-maps/MSL/Layers/json/MSL_waypoints.json"
+        }
+      ]
+    },
+    {
+      "id": "stop-4-2778",
+      "name": "Curiosity stop, sol 49",
+      "type": "rover stop",
+      "lat": -4.59030545,
+      "lon": 137.4465064,
+      "x": -155.40040814068746,
+      "z": 48.3918988960213,
+      "description": "24 full-frame Navcam images taken at this Curiosity stop (sols 49\u201349).",
+      "tags": [
+        "Curiosity",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "24 Navcam images at site 4 / drive 2778 (sols 49\u201349)",
+          "source": "https://mars.nasa.gov/msl/multimedia/raw-images/"
+        },
+        {
+          "text": "Position from the Curiosity waypoint list (MMGIS)",
+          "source": "https://mars.nasa.gov/mmgis-maps/MSL/Layers/json/MSL_waypoints.json"
+        }
+      ]
+    },
+    {
+      "id": "stop-5-1070",
+      "name": "Curiosity stop, sol 123",
+      "type": "rover stop",
+      "lat": -4.59005409,
+      "lon": 137.4493493,
+      "x": 12.571308107082505,
+      "z": 33.49261092656525,
+      "description": "24 full-frame Navcam images taken at this Curiosity stop (sols 123\u2013123).",
+      "tags": [
+        "Curiosity",
+        "Navcam"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "24 Navcam images at site 5 / drive 1070 (sols 123\u2013123)",
+          "source": "https://mars.nasa.gov/msl/multimedia/raw-images/"
+        },
+        {
+          "text": "Position from the Curiosity waypoint list (MMGIS)",
+          "source": "https://mars.nasa.gov/mmgis-maps/MSL/Layers/json/MSL_waypoints.json"
+        }
+      ]
+    }
+  ],
+  "shelter_poi": "stop-4-2002",
+  "note": "Pins from Curiosity's waypoints and Navcam imaging counts; no images downloaded for these stops.",
+  "skipped": []
+}

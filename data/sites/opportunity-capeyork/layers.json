@@ -1,0 +1,185 @@
+{
+  "slope_deg": {
+    "min": 0.0024447610717062682,
+    "mean": 5.0626422533507744,
+    "p99": 16.49828044703401,
+    "max": 48.630938582608024
+  },
+  "roughness_m": {
+    "mean": 0.029087153884491755,
+    "nogo_threshold": 0.093742766159025,
+    "max": 0.5356569288879846
+  },
+  "slope_bin_share": {
+    "0-8": 0.8675583082256694,
+    "8-15": 0.11659089212888794,
+    "15-25": 0.014986898348977274,
+    "25-90": 0.0008639012964653657
+  },
+  "nogo_share": 0.020116120602665724,
+  "nogo_slope_share": 0.0008639012964653657,
+  "cost_finite": {
+    "min": 1.0549710988998413,
+    "max": 10.453791618347168
+  },
+  "params": {
+    "max_slope_deg": 25,
+    "roughness_window": 5,
+    "roughness_nogo_pct": 98,
+    "slope_cost_scale_deg": 9,
+    "rough_weight": 2,
+    "slope_bins_deg": [
+      8,
+      15,
+      25
+    ]
+  },
+  "planner": {
+    "climb_weight": 4,
+    "walk_speed_mps": 0.9,
+    "max_stops": 6,
+    "smooth_passes": 3,
+    "lambda_default": 0.5,
+    "lambda_alternatives": [
+      0.2,
+      0.8
+    ],
+    "suit_hours": 8.0,
+    "reserve_min": 30,
+    "dose_budget_msv": 0.5,
+    "max_stops_bruteforce": 6,
+    "hazard_slope_deg": 15
+  },
+  "legends": {
+    "slope": {
+      "type": "ramp",
+      "stops": [
+        [
+          0,
+          [
+            20,
+            30,
+            90
+          ]
+        ],
+        [
+          0.25,
+          [
+            30,
+            120,
+            200
+          ]
+        ],
+        [
+          0.5,
+          [
+            80,
+            200,
+            160
+          ]
+        ],
+        [
+          0.75,
+          [
+            240,
+            210,
+            60
+          ]
+        ],
+        [
+          1,
+          [
+            200,
+            30,
+            30
+          ]
+        ]
+      ],
+      "min": 0,
+      "max": 35,
+      "units": "deg",
+      "note": "1 m HiRISE DTM slope; 35\u00b0 and steeper saturate."
+    },
+    "hazard": {
+      "type": "categories",
+      "items": [
+        {
+          "label": "0\u20138\u00b0 easy",
+          "color": [
+            46,
+            160,
+            67
+          ]
+        },
+        {
+          "label": "8\u201315\u00b0 moderate",
+          "color": [
+            230,
+            200,
+            40
+          ]
+        },
+        {
+          "label": "15\u201325\u00b0 hard",
+          "color": [
+            235,
+            120,
+            30
+          ]
+        },
+        {
+          "label": ">25\u00b0 or too rough: no-go",
+          "color": [
+            210,
+            30,
+            30
+          ]
+        }
+      ],
+      "note": "No-go = slope over 25\u00b0 or roughness above the 98th percentile."
+    }
+  },
+  "sim": {
+    "step_s": 1,
+    "substep_s": 0.1,
+    "speeds": [
+      1,
+      10,
+      60
+    ],
+    "gravity_ratio": 0.38,
+    "body_kg": 75,
+    "load_kg": 60,
+    "terrain_factor": 1.1,
+    "kj_per_l_o2": 20.0,
+    "ref_metabolic_w": 293,
+    "rq": 0.85,
+    "hr_rest": 70,
+    "hr_per_w": 0.12,
+    "hr_lag_s": 30,
+    "suit_temp_base_c": 22,
+    "suit_temp_per_w": 0.012,
+    "suit_temp_lag_s": 180,
+    "battery_hours": 10,
+    "off_route_m": 30,
+    "arrive_m": 6,
+    "dose_limit_msv": 50,
+    "spe": {
+      "multiplier": 200,
+      "alert_min": 30,
+      "duration_min": 90
+    },
+    "leak": {
+      "o2_multiplier": 3
+    },
+    "shelters": [
+      {
+        "id": "rover",
+        "name": "Pressurised rover",
+        "poi": "prox-33-0",
+        "note": "model placement: parked at the sol-697 close-up stop"
+      }
+    ]
+  },
+  "cost_encoding": "float32 row-major like height.f32; +Infinity = no-go"
+}

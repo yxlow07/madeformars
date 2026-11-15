@@ -1,0 +1,47 @@
+{
+  "width": 1001,
+  "height": 1001,
+  "res_x_m": 0.9485813385774325,
+  "res_z_m": 1.0,
+  "extent_x_m": [
+    -474.2906692887163,
+    474.2906692887163
+  ],
+  "extent_z_m": [
+    -500.0,
+    500.0
+  ],
+  "layout": "float32 row-major; row 0 = north (z min), col 0 = west (x min); y = height above origin",
+  "origin_lon": 77.40843381268883,
+  "origin_lat": 18.453413441206013,
+  "origin_easting": 4588361.5,
+  "origin_northing": 1093820.5,
+  "origin_elev_m": -2545.121826171875,
+  "origin_to_stop_m": 0.42767280119252804,
+  "stop": {
+    "site": 32,
+    "drive": 1214,
+    "lon": 77.40843791,
+    "lat": 18.45341952,
+    "x": 0.230378991256978,
+    "z": -0.3603186747059226,
+    "y": 0.0,
+    "elev_geoid": -2545.135204,
+    "dtm_minus_waypoint_elev_m": 0.013377828125157976
+  },
+  "min_height_m": -9.39013671875,
+  "max_height_m": 74.19091796875,
+  "nodata_filled": 0,
+  "crs_wkt": "PROJCS[\"Equirectangular Mars 2000 Sphere IAU\",GEOGCS[\"D_Mars_2000_Sphere\",DATUM[\"Mars_2000_(Sphere)\",SPHEROID[\"Mars_2000_Sphere_IAU\",3396190,0],AUTHORITY[\"ESRI\",\"106971\"]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+  "kx_cos_lat": 0.9485813385774325,
+  "dtm_source": "https://planetarymaps.usgs.gov/mosaic/mars2020_trn/HiRISE/JEZ_hirise_soc_006_DTM_MOLAtopography_DeltaGeoid_1m_Eqc_latTs0_lon0_blend40.tif",
+  "ortho_source": "https://planetarymaps.usgs.gov/mosaic/mars2020_trn/HiRISE/JEZ_hirise_soc_006_orthoMosaic_25cm_Eqc_latTs0_lon0_first.tif",
+  "ortho_px": [
+    4000,
+    4000
+  ],
+  "ortho_stretch": [
+    38.0,
+    209.0
+  ]
+}

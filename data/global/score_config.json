@@ -1,0 +1,34 @@
+{
+  "score": {
+    "radius_km": 100,
+    "sample_km": 6,
+    "weights": {
+      "science": 1.0,
+      "safety": 1.0,
+      "access": 1.0
+    },
+    "science_norm": {
+      "units": 6,
+      "minerals": 6,
+      "names": 15
+    },
+    "steep_deg": 15,
+    "dust_albedo_min": 0.24,
+    "dust_ti_max": 150,
+    "dust_weight": 1.0,
+    "access": {
+      "elev_best_m": -4000,
+      "elev_worst_m": 2000,
+      "lat_full_deg": 30,
+      "lat_zero_deg": 60
+    },
+    "top_n": 5
+  },
+  "radiation": {
+    "gale_dose_msv_day": 0.67,
+    "gale_elev_m": -4400,
+    "free_space_msv_day": 1.84,
+    "scale_height_m": 11100
+  },
+  "note": "generated from config.yaml by bake_layers.py"
+}

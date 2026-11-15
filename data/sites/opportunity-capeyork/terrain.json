@@ -1,0 +1,47 @@
+{
+  "width": 989,
+  "height": 989,
+  "res_x_m": 1.0110838681982293,
+  "res_z_m": 1.0118484939376,
+  "extent_x_m": [
+    -499.47543088992524,
+    499.47543088992524
+  ],
+  "extent_z_m": [
+    -499.8531560051744,
+    499.8531560051744
+  ],
+  "layout": "float32 row-major; row 0 = north (z min), col 0 = west (x min); y = height above origin",
+  "origin_lon": -5.35544409133502,
+  "origin_lat": -2.2275717146129006,
+  "origin_easting": 1455.5440585292376,
+  "origin_northing": -132038.6395951523,
+  "origin_elev_m": -1486.9169921875,
+  "origin_to_stop_m": 0.2958561816519879,
+  "stop": {
+    "site": 163,
+    "drive": 43,
+    "lon": 354.64455593963555,
+    "lat": -2.227566723436106,
+    "x": 0.001834379144776396,
+    "z": -0.29585049478919245,
+    "y": 0.0,
+    "elev_geoid": -1486.9169921875,
+    "dtm_minus_waypoint_elev_m": 0.0
+  },
+  "min_height_m": -71.863525390625,
+  "max_height_m": 20.88720703125,
+  "nodata_filled": 0,
+  "crs_wkt": "PROJCS[\"EQUIRECTANGULAR MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS_localRadius\",3396190,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",354.62],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+  "kx_cos_lat": 0.9992443278376635,
+  "dtm_source": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_018700_018799/ESP_018701_1775_ESP_018846_1775/DTEEC_018701_1775_018846_1775_U01.IMG",
+  "ortho_source": "https://hirise-pds.lpl.arizona.edu/PDS/DTM/ESP/ORB_018700_018799/ESP_018701_1775_ESP_018846_1775/ESP_018701_1775_RED_A_01_ORTHO.JP2",
+  "ortho_px": [
+    3952,
+    3952
+  ],
+  "ortho_stretch": [
+    70.0,
+    202.0
+  ]
+}

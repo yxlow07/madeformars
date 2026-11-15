@@ -1,0 +1,29 @@
+{
+  "anchor": {
+    "site": 163,
+    "drive": 43,
+    "sol": 2816,
+    "lon": 354.64455593963555,
+    "lat": -2.227566723436106,
+    "elev_geoid": -1486.9169921875,
+    "roll": null,
+    "pitch": null,
+    "yaw": null
+  },
+  "drives": [
+    {
+      "site": 163,
+      "drive": 43,
+      "sol": 2816,
+      "lon": 354.64455593963555,
+      "lat": -2.227566723436106,
+      "elev_geoid": -1486.9169921875,
+      "roll": null,
+      "pitch": null,
+      "yaw": null,
+      "n_images": null
+    }
+  ],
+  "mission": "mer",
+  "source": "Analyst's Notebook corrected traverse MERB_traverse_5130.csv"
+}

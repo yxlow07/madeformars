@@ -1,0 +1,370 @@
+{
+  "site": "Jezero \u2014 Three Forks",
+  "habitat": {
+    "id": "habitat",
+    "name": "Habitat / rover (start)",
+    "type": "habitat",
+    "lat": 18.45341952,
+    "lon": 77.40843791,
+    "x": 0.230378991256978,
+    "z": -0.3603186747059226,
+    "description": "Walk start and shelter. Placed at the Phase 1 rover stop (site 32, drive 1214, sol 693), beside the depot.",
+    "facts": [
+      {
+        "text": "Rover stop site 32 / drive 1214, sol 693",
+        "source": "https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json"
+      }
+    ]
+  },
+  "pois": [
+    {
+      "id": "depot",
+      "name": "Three Forks sample depot",
+      "type": "sample depot",
+      "lat": 18.45337179,
+      "lon": 77.40844668,
+      "x": 0.7234886575580594,
+      "z": 2.4688626383431256,
+      "description": "Ten sample tubes left on flat ground near the base of the delta; depot completed on sol 690 (28 Jan 2023).",
+      "tags": [
+        "sample return",
+        "delta base",
+        "Mars Sample Return"
+      ],
+      "science_weight": 5,
+      "facts": [
+        {
+          "text": "Depot completed sol 690 (28 Jan 2023); 10 tubes deposited in the 'Three Forks' region",
+          "source": "https://www.nasa.gov/missions/mars-2020-perseverance/perseverance-rover/nasas-perseverance-rover-completes-mars-sample-depot/"
+        },
+        {
+          "text": "Position: rover drive site 32 / drive 1184 on sol 690",
+          "source": "https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json"
+        }
+      ],
+      "rmc": [
+        32,
+        1184
+      ],
+      "image": {
+        "file": "pois/depot.jpg",
+        "imageid": "ZL0_0690_0728182144_364EBY_N0321184ZCAM08690_1100LMJ",
+        "instrument": "MCZ_LEFT",
+        "sol": 690,
+        "credit": "NASA/JPL-Caltech/ASU",
+        "source": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00690/ids/edr/browse/zcam/ZL0_0690_0728182144_364EBY_N0321184ZCAM08690_1100LMJ01.png"
+      }
+    },
+    {
+      "id": "sample-skinner-ridge",
+      "name": "Skinner Ridge (sample site)",
+      "type": "science target",
+      "lat": 18.45889532,
+      "lon": 77.40616768,
+      "x": -127.41755244944439,
+      "z": -324.93670737277716,
+      "description": "Delta-front sedimentary rock core cored here: #10 Swift Run, #11 Skyland.",
+      "tags": [
+        "sedimentary",
+        "delta front",
+        "sample core"
+      ],
+      "science_weight": 5,
+      "facts": [
+        {
+          "text": "Samples #10 Swift Run, #11 Skyland; sealed sols 490, 495; feature 'Skinner Ridge'",
+          "source": "https://science.nasa.gov/mission/mars-2020-perseverance/mars-rock-samples/"
+        },
+        {
+          "text": "Position: rover drive site 26 / drive 1004 on the sealed sol (CacheCam images)",
+          "source": "https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json"
+        }
+      ],
+      "rmc": [
+        26,
+        1004
+      ],
+      "image": {
+        "file": "pois/sample-skinner-ridge.jpg",
+        "imageid": "ZL0_0490_0710454510_193EBY_N0261004ZCAM05068_1100LMJ",
+        "instrument": "MCZ_LEFT",
+        "sol": 490,
+        "credit": "NASA/JPL-Caltech/ASU",
+        "source": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00490/ids/edr/browse/zcam/ZL0_0490_0710454510_193EBY_N0261004ZCAM05068_1100LMJ02.png"
+      }
+    },
+    {
+      "id": "sample-wildcat-ridge",
+      "name": "Wildcat Ridge (sample site)",
+      "type": "science target",
+      "lat": 18.45864728,
+      "lon": 77.40592495,
+      "x": -141.06550107052692,
+      "z": -310.23421139921993,
+      "description": "Delta-front sedimentary rock core cored here: #12 Hazeltop, #13 Bearwallow.",
+      "tags": [
+        "sedimentary",
+        "delta front",
+        "sample core"
+      ],
+      "science_weight": 5,
+      "facts": [
+        {
+          "text": "Samples #12 Hazeltop, #13 Bearwallow; sealed sols 509, 516; feature 'Wildcat Ridge'",
+          "source": "https://science.nasa.gov/mission/mars-2020-perseverance/mars-rock-samples/"
+        },
+        {
+          "text": "Position: rover drive site 26 / drive 1222 on the sealed sol (CacheCam images)",
+          "source": "https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json"
+        }
+      ],
+      "rmc": [
+        26,
+        1222
+      ],
+      "image": {
+        "file": "pois/sample-wildcat-ridge.jpg",
+        "imageid": "NLF_0508_0712035900_230ECM_N0261222NCAM00501_01_295J",
+        "instrument": "NAVCAM_LEFT",
+        "sol": 508,
+        "credit": "NASA/JPL-Caltech",
+        "source": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00508/ids/edr/browse/ncam/NLF_0508_0712035900_230ECM_N0261222NCAM00501_01_295J01.png"
+      }
+    },
+    {
+      "id": "sample-amalik",
+      "name": "Amalik (sample site)",
+      "type": "science target",
+      "lat": 18.45072631,
+      "lon": 77.4014403,
+      "x": -393.2233422279759,
+      "z": 159.27888944209553,
+      "description": "Delta-front sedimentary rock core cored here: #14 Shuyak.",
+      "tags": [
+        "sedimentary",
+        "delta front",
+        "sample core"
+      ],
+      "science_weight": 4,
+      "facts": [
+        {
+          "text": "Samples #14 Shuyak; sealed sols 575; feature 'Amalik'",
+          "source": "https://science.nasa.gov/mission/mars-2020-perseverance/mars-rock-samples/"
+        },
+        {
+          "text": "Position: rover drive site 29 / drive 0 on the sealed sol (CacheCam images)",
+          "source": "https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json"
+        }
+      ],
+      "rmc": [
+        29,
+        0
+      ],
+      "image": {
+        "file": "pois/sample-amalik.jpg",
+        "imageid": "NLF_0574_0717901166_928ECM_N0290000NCAM00501_01_295J",
+        "instrument": "NAVCAM_LEFT",
+        "sol": 574,
+        "credit": "NASA/JPL-Caltech",
+        "source": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00574/ids/edr/browse/ncam/NLF_0574_0717901166_928ECM_N0290000NCAM00501_01_295J01.png"
+      }
+    },
+    {
+      "id": "sample-hidden-harbor",
+      "name": "Hidden Harbor (sample site)",
+      "type": "science target",
+      "lat": 18.45162509,
+      "lon": 77.40143694,
+      "x": -393.4122645181868,
+      "z": 106.00397680210881,
+      "description": "Delta-front sedimentary rock core cored here: #16 Kukaklek.",
+      "tags": [
+        "sedimentary",
+        "delta front",
+        "sample core"
+      ],
+      "science_weight": 4,
+      "facts": [
+        {
+          "text": "Samples #16 Kukaklek; sealed sols 631; feature 'Hidden Harbor'",
+          "source": "https://science.nasa.gov/mission/mars-2020-perseverance/mars-rock-samples/"
+        },
+        {
+          "text": "Position: rover drive site 30 / drive 2188 on the sealed sol (CacheCam images)",
+          "source": "https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json"
+        }
+      ],
+      "rmc": [
+        30,
+        2188
+      ],
+      "image": {
+        "file": "pois/sample-hidden-harbor.jpg",
+        "imageid": "ZL0_0629_0722792685_178EBY_N0302188ZCAM07114_0340LMJ",
+        "instrument": "MCZ_LEFT",
+        "sol": 629,
+        "credit": "NASA/JPL-Caltech/ASU",
+        "source": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00629/ids/edr/browse/zcam/ZL0_0629_0722792685_178EBY_N0302188ZCAM07114_0340LMJ01.png"
+      }
+    },
+    {
+      "id": "prox-26-0",
+      "name": "Close-up science stop, sol 450",
+      "type": "rover stop",
+      "lat": 18.45750967,
+      "lon": 77.40630146,
+      "x": -119.89552152409094,
+      "z": -242.80272274976596,
+      "description": "200 SHERLOC/WATSON close-up images of rock targets taken at this rover stop.",
+      "tags": [
+        "proximity science",
+        "WATSON"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "200 WATSON images at site 26 / drive 0 (first on sol 450)",
+          "source": "https://mars.nasa.gov/mars2020/multimedia/raw-images/"
+        },
+        {
+          "text": "Position from the rover waypoint for this drive",
+          "source": "https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json"
+        }
+      ],
+      "rmc": [
+        26,
+        0
+      ],
+      "image": {
+        "file": "pois/prox-26-0.jpg",
+        "imageid": "SI1_0450_0706892241_875ECM_N0260000SRLC04001_0000LMJ",
+        "instrument": "SHERLOC_WATSON",
+        "sol": 450,
+        "credit": "NASA/JPL-Caltech",
+        "source": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00450/ids/edr/browse/shrlc/SI1_0450_0706892241_875ECM_N0260000SRLC04001_0000LMJ02.png"
+      }
+    },
+    {
+      "id": "prox-25-214",
+      "name": "Close-up science stop, sol 445",
+      "type": "rover stop",
+      "lat": 18.45752717,
+      "lon": 77.40746956,
+      "x": -54.21691243410861,
+      "z": -243.84002995607443,
+      "description": "130 SHERLOC/WATSON close-up images of rock targets taken at this rover stop.",
+      "tags": [
+        "proximity science",
+        "WATSON"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "130 WATSON images at site 25 / drive 214 (first on sol 445)",
+          "source": "https://mars.nasa.gov/mars2020/multimedia/raw-images/"
+        },
+        {
+          "text": "Position from the rover waypoint for this drive",
+          "source": "https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json"
+        }
+      ],
+      "rmc": [
+        25,
+        214
+      ],
+      "image": {
+        "file": "pois/prox-25-214.jpg",
+        "imageid": "ZL0_0445_0706443408_364EBY_N0250214ZCAM03366_1100LMJ",
+        "instrument": "MCZ_LEFT",
+        "sol": 445,
+        "credit": "NASA/JPL-Caltech/ASU",
+        "source": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00445/ids/edr/browse/zcam/ZL0_0445_0706443408_364EBY_N0250214ZCAM03366_1100LMJ01.png"
+      }
+    },
+    {
+      "id": "prox-33-0",
+      "name": "Close-up science stop, sol 697",
+      "type": "rover stop",
+      "lat": 18.45739106,
+      "lon": 77.40880429,
+      "x": 20.830780325312055,
+      "z": -235.77215087623335,
+      "description": "84 SHERLOC/WATSON close-up images of rock targets taken at this rover stop.",
+      "tags": [
+        "proximity science",
+        "WATSON"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "84 WATSON images at site 33 / drive 0 (first on sol 697)",
+          "source": "https://mars.nasa.gov/mars2020/multimedia/raw-images/"
+        },
+        {
+          "text": "Position from the rover waypoint for this drive",
+          "source": "https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json"
+        }
+      ],
+      "rmc": [
+        33,
+        0
+      ],
+      "image": {
+        "file": "pois/prox-33-0.jpg",
+        "imageid": "ZL0_0697_0728813192_456EBY_N0330000ZCAM03534_1100LMJ",
+        "instrument": "MCZ_LEFT",
+        "sol": 697,
+        "credit": "NASA/JPL-Caltech/ASU",
+        "source": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00697/ids/edr/browse/zcam/ZL0_0697_0728813192_456EBY_N0330000ZCAM03534_1100LMJ01.png"
+      }
+    },
+    {
+      "id": "prox-26-3008",
+      "name": "Close-up science stop, sol 540",
+      "type": "rover stop",
+      "lat": 18.45531877,
+      "lon": 77.40790912,
+      "x": -29.501828612861864,
+      "z": -112.93778794608079,
+      "description": "72 SHERLOC/WATSON close-up images of rock targets taken at this rover stop.",
+      "tags": [
+        "proximity science",
+        "WATSON"
+      ],
+      "science_weight": 3,
+      "facts": [
+        {
+          "text": "72 WATSON images at site 26 / drive 3008 (first on sol 540)",
+          "source": "https://mars.nasa.gov/mars2020/multimedia/raw-images/"
+        },
+        {
+          "text": "Position from the rover waypoint for this drive",
+          "source": "https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_waypoints.json"
+        }
+      ],
+      "rmc": [
+        26,
+        3008
+      ],
+      "image": {
+        "file": "pois/prox-26-3008.jpg",
+        "imageid": "ZL0_0540_0714881730_519EBY_N0263008ZCAM08560_1100LMJ",
+        "instrument": "MCZ_LEFT",
+        "sol": 540,
+        "credit": "NASA/JPL-Caltech/ASU",
+        "source": "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00540/ids/edr/browse/zcam/ZL0_0540_0714881730_519EBY_N0263008ZCAM08560_1100LMJ01.png"
+      }
+    }
+  ],
+  "note": "positions from Perseverance waypoints; facts from the linked NASA pages",
+  "skipped": [
+    [
+      "Mageik",
+      619,
+      [
+        30,
+        1172
+      ]
+    ]
+  ]
+}
